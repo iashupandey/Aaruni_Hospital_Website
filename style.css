@@ -266,6 +266,9 @@ header .container .header__content p {
     line-height: 1.4;
   }
 }
+
+
+
 #services #my-id {
   color: rgba(0, 0, 0, 0.686);
 }
@@ -295,3 +298,173 @@ header .container .header__content p {
 #services .container article div h4 {
   margin-bottom: 1rem;
 }/*# sourceMappingURL=style.css.map */
+
+
+/* ------------------OUR DEPARTMENT CSS STARTS-------------------- */
+
+#OurDep {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 484px;
+  /* padding: 62px 20px; */
+}
+
+#OurDep h2{
+  color: #4a4bc0;
+}
+#box1{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.swiper {
+  width: 80%;
+  height: fit-content;
+}
+.swiper-slide{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.swiper-slide img {
+  width: 300px;
+  height: 90%;
+}
+
+.swiper .swiper-button-prev, .swiper .swiper-button-next {
+  color: rgb(3, 2, 2);
+}
+
+.swiper .swiper-pagination-bullet-active {
+  background: #1363ec
+}
+
+.swiper-pagination-bullet {
+  background: black;
+}
+#box1 h4{
+  color: #4a4bc0;
+}
+
+/* ------------------OUR DEPARTMENT CSS ENDS-------------------- */
+
+
+/* ------------------ABOUT US CSS STARTS-------------------- */
+.about {
+  padding-top: 90px;
+  padding: 20px;
+  /* margin: auto; */
+}
+
+
+.about h2 {
+  /* border-left: 7px solid #3b5c99; */
+  display: block;
+  height: 47px;
+  padding-left: 14px;
+  color: #5917c2;
+  font-size: 38px;
+  font-weight: 700;
+  padding-bottom: 50px;
+  margin: auto;
+  text-align: center;
+  
+  
+}
+
+.about h2 span {
+
+  color: #262626;
+  font-size: 38px;
+  font-weight: 700;
+  padding-bottom: 50px;
+  align-content: center;
+}
+
+.about .row {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  padding: 50PX;
+}
+
+.about .row .content{
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  flex: 1 1 45rem;
+  /* padding: 2rem; */
+  /* border: 2px solid red; */
+  /* left: 0; */
+}
+
+
+.about .row .content h3 {
+  padding-top: 20px;
+  padding-right: 8px;
+  color: #000000;
+  font-size: 50px;
+  font-weight: 600;
+  padding-bottom: 16px;
+}
+
+.about .row .content p {
+  padding-top: 10px;
+  padding-right: 10px;
+  color: #000000;
+  font-size: 16px;
+  font-weight: 600;
+
+}
+
+.about .row .content .p-inner {
+
+  padding-right: 10px;
+  color: #000000;
+  font-size: 16px;
+  font-weight: 600;
+  padding-bottom: 30px;
+}
+
+.about .content .readmore .btn-light {
+  background-color: #5917c2;
+  color: rgb(255 251 251);
+  border-color: #ffffff;
+  box-shadow: 0px 0px 0px #ffffff;
+  padding: 5px 5px 4px 11px;
+  width: 345px;
+  border-radius: 30px;
+  position: relative;
+  text-align: center;
+  font-size: 16px;
+  text-decoration:none;
+}
+
+.about .btn-light a{
+ color:#ffffff;
+ text-decoration:none;
+ width:100%;
+}
+
+.about .row .image{
+  flex: 1 1 45rem;
+}
+.about .row .image img {
+  width: 100%;
+  border-radius: 50px;
+  /* padding: 5%; */
+}
+
+
+/* ------------------ABOUT US CSS ENDS-------------------- */
