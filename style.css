@@ -733,6 +733,7 @@ footer{
   color: #fff;
   margin-bottom: 20px;
   font-weight: 500;
+  /* text-decoration: underline; */
 }
 .footer-social {
   padding-left: 0;
@@ -765,21 +766,6 @@ footer{
 
 .footer-social i:hover {
   background-color: #6c9dfb
-}
-.instagram {
-  padding-left: 0;
-  margin-bottom: 0
-}
-
-.instagram li {
-  list-style-type: none;
-  display: inline-block;
-  margin-bottom: 10px;
-  margin-right: 10px
-}
-
-.instagram li img {
-  max-width: 80px
 }
 
 .location {
