@@ -114,6 +114,7 @@ nav {
   background: linear-gradient(135deg, #480ca8, #4cc9f0);
   color: #ffffff;
   box-shadow: 0 1rem 1rem rgba(12, 3, 27, 0.1);
+  overflow: hidden;
 }
 nav .container {
   display: flex;
@@ -133,10 +134,16 @@ nav .container a {
   color: #ffffff;
   font-weight: 600;
   font-size: 1rem;
+  align-items: center;
   /* list-style: none; */
 }
-nav .container .nav__logo h3 {
-  color: #ffffff;
+nav .container .logo{
+  margin-left: -40px;
+}
+nav .container .logo img {
+  height: 70px;
+  width: 100%;
+  border-radius: 10px;
 }
 
 /*-------------- Media Queries (Medium devices) -----------------*/
