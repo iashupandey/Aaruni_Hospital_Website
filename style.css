@@ -701,8 +701,6 @@ header .container .header__content p {
 }
 /*----------------------- Our blogs ends------------------------- */
 
-
-<<<<<<< HEAD
 /*----------------------- FOOTER CSS STARTS------------------------- */
 
 footer{
@@ -963,7 +961,7 @@ footer .copyright .logo-bottom {
 
 
 /*----------------------- FOOTER CSS ENDS------------------------- */
-=======
+
 /* ======================= Make Appointment Section start ======================= */
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
@@ -1352,4 +1350,4 @@ textarea.input {
 }
 
 /* ======================= Make Appointment Section ends ======================= */
->>>>>>> 30d60dae4a32753e64c389bdf88767f71eca738c
+
