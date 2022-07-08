@@ -714,3 +714,265 @@ header .container .header__content p {
   margin-top: -0.5rem;
 }
 /*----------------------- Our blogs ends------------------------- */
+
+
+/*----------------------- FOOTER CSS STARTS------------------------- */
+
+footer{
+  background-color: #060f1e;
+  margin: auto;
+}
+.footer-container{
+  /* max-width: 1990px; */
+  margin: auto;
+  height: 300px;
+  padding: 30px;
+}
+.row {
+  width:100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.footer-col {
+  width: 23%;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  /* align-items: center; */
+}
+.footer-col h3{
+  font-size: 25px;
+  color: #fff;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+.footer-social {
+  padding-left: 0;
+    margin-bottom: 0;
+    margin-top: 20px;
+    MARGIN-LEFT: 10PX;
+}
+.footer-social li {
+  display: inline-block;
+  margin-right: 10px;
+  list-style-type: none
+}
+
+.footer-social li:last-child {
+  margin-right: 0
+}
+.footer-social i {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  line-height: 40px;
+  background-color: #207ef7;
+  color: #fff;
+  text-align: center;
+  border-radius: 30px;
+  font-size: 16px;
+  -webkit-transition: .5s;
+  transition: .5s
+}
+
+.footer-social i:hover {
+  background-color: #6c9dfb
+}
+.instagram {
+  padding-left: 0;
+  margin-bottom: 0
+}
+
+.instagram li {
+  list-style-type: none;
+  display: inline-block;
+  margin-bottom: 10px;
+  margin-right: 10px
+}
+
+.instagram li img {
+  max-width: 80px
+}
+
+.location {
+  padding-left: 0;
+  margin-bottom: 0
+}
+
+.location li {
+  list-style-type: none;
+  margin-bottom: 10px;
+  font-size: 11px;
+  font-weight: 500
+}
+
+.location li a {
+  color: #fff;
+  text-decoration : none;
+}
+
+.location li a:hover {
+  color: #207ef7;
+  /* letter-spacing: 1px; */
+  text-decoration : none;
+}
+
+.location li:last-child {
+  margin-bottom: 0
+}
+.footer-col .map{
+    /* flex: 1 1 1rem; */
+    height: 150px;
+    width: 255px;
+    /* width: auto; */
+    /* object-fit: cover; */
+}
+
+
+.footer-quick-links {
+  padding-left: 0;
+  margin-bottom: 0
+}
+
+.footer-quick-links li {
+  list-style-type: none;
+  margin-bottom: 10px;
+  font-size: 15px;
+  font-weight: 400
+}
+
+.footer-quick-links li a {
+  color: #fff;
+  text-decoration : none;
+}
+
+.footer-quick-links li a:hover {
+  color: #207ef7;
+  letter-spacing: 1px;
+  text-decoration : none;
+}
+
+.footer-quick-links li:last-child {
+  margin-bottom: 0
+}
+/* .lines {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  margin: auto;
+  width: 90vw;
+  z-index: -1
+}
+
+.lines .line {
+  position: absolute;
+  width: 1px;
+  height: 100%;
+  top: 0;
+  left: 48%;
+  background: rgba(255, 255, 255, .1);
+  overflow: hidden
+}
+
+.lines .line::after {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 20px;
+  width: 100%;
+  top: -50%;
+  left: 0;
+  background-color: #fff;
+  -webkit-animation: run 7s 0s infinite;
+  animation: run 7s 0s infinite;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-timing-function: cubic-bezier(.4, .26, 0, .97);
+  animation-timing-function: cubic-bezier(.4, .26, 0, .97)
+}
+
+.lines .line:nth-child(1) {
+  margin-left: -24%
+}
+
+.lines .line:nth-child(1)::after {
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s
+}
+
+.lines .line:nth-child(3)::after {
+  -webkit-animation-delay: 2.5s;
+  animation-delay: 2.5s
+}
+
+.lines .line:nth-child(3) {
+  margin-left: 20%
+}
+@-webkit-keyframes run {
+  0% {
+      top: -50%
+  }
+
+  100% {
+      top: 110%
+  }
+}
+
+@keyframes run {
+  0% {
+      top: -50%
+  }
+
+  100% {
+      top: 110%
+  }
+} */
+footer .copyright-area {
+  /* position: relative; */
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 100%;
+  background-color: #060f1e;
+  /* padding: 0.1rem 0; */
+  text-align: center;
+  color: white;
+  border-top: 1px solid rgb(123, 118, 201);
+}
+
+.copyright {
+  display: flex;
+  color: white;
+  font-size: larger;
+  font-weight: 500;
+  justify-content: center;
+
+}
+
+footer .copyright a {
+  display: inline-flex;
+  font-weight: 700;
+  color: black;
+  background-color: white;
+  padding: 2px;
+  width: fit-content;
+  border-radius: 15px;
+}
+
+footer .copyright a:hover {
+  color: #4619d0;
+  box-shadow: 0 0 2px 2px #4619d0;
+}
+
+footer .copyright .logo-bottom {
+  height: 30px;
+  width: 30px;
+  vertical-align: middle;
+}
+
+
+/*----------------------- FOOTER CSS ENDS------------------------- */
