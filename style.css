@@ -606,3 +606,92 @@ header .container .header__content p {
 }
 
 /* ------------------WHY CHOOSE US CSS ENDS-------------------- */
+
+/* ------------------Our Blogs starts-------------------------- */
+#blogs{
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.OurBlogs{
+  width: 100%;
+  height: 80%;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  /* border: 2px solid red; */
+}
+
+#blogs h2 {
+  /* border-left: 7px solid #3b5c99; */
+  display: block;
+  height: 47px;
+  padding-left: 14px;
+  color: #4a4bc0;
+  font-size: 38px;
+  font-weight: 700;
+  padding-bottom: 50px;
+  margin: auto;
+  text-align: center;
+  
+  
+}
+
+#blogs h2 span {
+
+  color: #262626;
+  font-size: 38px;
+  font-weight: 700;
+  padding-bottom: 50px;
+  align-content: center;
+}
+.blogbox{
+  background: linear-gradient(135deg, #480ca8, #4cc9f0);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  align-items: center;
+  height: 40%;
+  width: 25%;
+  /* border: 2px solid white; */
+  margin: 2rem;
+  overflow: hidden;
+  border-radius: 15px;
+  transition: all 400ms ease-in-out;
+}
+.blogbox img{
+  height: 200px;
+  width: 100%;
+}
+#blogs .blogbox article {
+  color: #ffffff;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  display: flex;
+  gap: 1.5rem;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  transition: all 400ms ease;
+}
+
+.blogbox h4{
+  line-height: 2.5rem;
+  font-size: 1.5rem;
+  text-decoration: underline;
+  text-align: center;
+} 
+
+.readmore a{
+  color: white;
+  font-size: 1.0rem;
+  padding: 0.8rem;
+}
+.blogbox:hover{
+  margin-top: -0.5rem;
+}
+/*----------------------- Our blogs ends------------------------- */
