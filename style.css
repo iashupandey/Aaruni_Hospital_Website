@@ -125,7 +125,26 @@ nav .container ul {
   display: flex;
   gap: 3rem;
   align-items: center;
-
+}
+nav .container ul li:hover:nth-child(1){
+  padding-top: 10px;
+  transition: 0.3s;
+  border-bottom: 2px solid #ffffff;
+}
+nav .container ul li:hover:nth-child(2){
+  padding-top: 10px;
+  transition: 0.3s;
+  border-bottom: 2px solid #ffffff;
+}
+nav .container ul li:hover:nth-child(3){
+  padding-top: 10px;
+  transition: 0.3s;
+  border-bottom: 2px solid #ffffff;
+}
+nav .container ul li:hover:nth-child(4){
+  padding-top: 10px;
+  transition: 0.3s;
+  border-bottom: 2px solid #ffffff;
 }
 nav .container button {
   display: none;
