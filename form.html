@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Form</title>
+  <script
+  src="https://kit.fontawesome.com/64d58efce2.js"
+  crossorigin="anonymous"
+></script>
+
+  <!-- -------------------------CSS Styling------------------- -->
+  <link rel="stylesheet" href="./style.css" />
+
+  <!-- ------------------------Boxicons CDN------------------------ -->
+  <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+</head>
+
+<body>
+  <!-- ---------------------------NAV STARTS--------------------------- -->
+
+  <nav>
+    <div class="container">
+      <div class="logo">
+        <img src="./assets/logo.jpeg" alt="">
+      </div>      
+      <ul id="nav__items">
+        <li><a href="./index.html">Home </a></li>
+        <li><a href="./index.html" target="_blank">Services </a></li>
+        <li><a href="./index.html" target="_blank">About Us </a></li>
+        <li><a href="./index.html" target="_blank">Our Specialities </a></li>
+        <li><a href="#appointment"  class="btn">Make a Call </a></li>
+      </ul>
+      <button id="open__nav-btn">
+        <i class="bx bx-menu"></i>
+      </button>
+      <button id="close__nav-btn">
+        <i class="bx bx-x"></i>
+      </button>
+    </div>
+  </nav>
+  <!-- -----------------------------END OF NAV ------------------------------>
+ 
+  <div class="container1">
+    <span class="big-circle"></span>
+    <img src="./assets/img/shape.png" class="square" alt="" />
+    <div class="form">
+      <div class="contact-info">
+        <h3 class="title">Let's get in touch</h3>
+        <p class="text">
+          Aaruni Multispeciality Hospital 
+        </p>
+
+        <div class="info">
+          <div class="information">
+            <img src="./assets/img/location.png" class="icon" alt="" />
+            <p>1-194, RJ SH 37, Housing Board Colony, Basant Vihar, Jhunjhunu, Rajasthan 333001
+            </p>
+          </div>
+          <div class="information">
+            <img src="./assets/img/email.png" class="icon" alt="" />
+            <p>lorem@ipsum.com</p>
+          </div>
+          <div class="information">
+            <img src="./assets/img/phone.png" class="icon" alt="" />
+            <p>88760-69446
+            </p>
+          </div>
+        </div>
+
+        <div class="social-media">
+          <p>Connect with us :</p>
+          <div class="social-icons">
+            <a href="#">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="#">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="#">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-form">
+        <span class="circle one"></span>
+        <span class="circle two"></span>
+
+        <form action="https://formspree.io/f/xlezyweo" method="post" autocomplete="off">
+          <h3 class="title">Make Appointment</h3>
+          <div class="input-container">
+            <input type="text" name="name" class="input" />
+            <label for="">Name</label>
+            <span>Name</span>
+          </div>
+          <div class="input-container">
+            <input type="email" name="email" class="input" />
+            <label for="">Email</label>
+            <span>Email</span>
+          </div>
+          <div class="input-container">
+            <input type="tel" name="phone" class="input" />
+            <label for="">Phone</label>
+            <span>Phone</span>
+          </div>
+          <div class="input-container textarea">
+            <textarea name="message" class="input"></textarea>
+            <label for="">Message</label>
+            <span>Message</span>
+          </div>
+          <input type="submit" value="Send" class="btn1" />
+        </form>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  <script src="./slider.js"></script>
+  <script src="./main.js"></script>
+  <script src="app.js"></script>
+
+</body>
+
+</html>
