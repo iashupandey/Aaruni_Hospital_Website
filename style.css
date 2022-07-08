@@ -126,26 +126,7 @@ nav .container ul {
   gap: 3rem;
   align-items: center;
 }
-nav .container ul li:hover:nth-child(1){
-  padding-top: 10px;
-  transition: 0.3s;
-  border-bottom: 2px solid #ffffff;
-}
-nav .container ul li:hover:nth-child(2){
-  padding-top: 10px;
-  transition: 0.3s;
-  border-bottom: 2px solid #ffffff;
-}
-nav .container ul li:hover:nth-child(3){
-  padding-top: 10px;
-  transition: 0.3s;
-  border-bottom: 2px solid #ffffff;
-}
-nav .container ul li:hover:nth-child(4){
-  padding-top: 10px;
-  transition: 0.3s;
-  border-bottom: 2px solid #ffffff;
-}
+
 nav .container button {
   display: none;
 }
@@ -402,7 +383,7 @@ header .container .header__content p {
 
 /* ------------------ABOUT US CSS STARTS-------------------- */
 .about {
-  padding-top: 90px;
+  /* padding-top: 90px; */
   padding: 20px;
   /* margin: auto; */
 }
@@ -519,7 +500,7 @@ header .container .header__content p {
 /* ------------------WHY CHOOSE US CSS STARTS-------------------- */
 
 .choose {
-  padding-top: 90px;
+  /* padding-top: 90px; */
   padding: 20px;
   /* margin: auto; */
 }
