@@ -445,6 +445,39 @@ nav .container .logo img {
 .swiper-pagination-bullet {
   background: black;
 }
+
+/* button css */
+.float{
+	position:fixed;
+	width:140px;
+	height:32px;
+	bottom:15px;
+	right:500px;
+	background-color:#0C9;
+	color:#FFF;
+  padding: 3px;
+	border-radius:10px;
+	text-align:center;
+  justify-content:center;
+	box-shadow: 2px 2px 3px #999;
+  cursor: pointer;
+}
+
+.float2{
+	position:fixed;
+	width:140px;
+	height:32px;
+	bottom:15px;
+	left:500px;
+	background-color:#0C9;
+	color:#FFF;
+  padding: 3px;
+	border-radius:10px;
+	text-align:center;
+  justify-content:center;
+	box-shadow: 2px 2px 3px #999;
+  cursor: pointer;
+}
 /* ---------------------Header CSS ends----------------------------- */
 /* ------------------OUR DEPARTMENT CSS STARTS-------------------- */
 
