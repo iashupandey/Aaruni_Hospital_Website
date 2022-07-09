@@ -449,13 +449,14 @@ nav .container .logo img {
 /* button css */
 .float{
 	position:fixed;
-	width:140px;
-	height:32px;
+	width:240px;
+	height:37px;
 	bottom:15px;
 	right:500px;
-	background-color:#0C9;
+	background-color:rgb(0, 105, 204);
 	color:#FFF;
-  padding: 3px;
+  padding: 5px;
+  font-weight: bold;
 	border-radius:10px;
 	text-align:center;
   justify-content:center;
@@ -465,13 +466,14 @@ nav .container .logo img {
 
 .float2{
 	position:fixed;
-	width:140px;
-	height:32px;
+	width:240px;
+	height:37px;
 	bottom:15px;
 	left:500px;
-	background-color:#0C9;
+  font-weight: bolder;
+	background-color:rgb(0, 105, 204);
 	color:#FFF;
-  padding: 3px;
+  padding: 5px;
 	border-radius:10px;
 	text-align:center;
   justify-content:center;
