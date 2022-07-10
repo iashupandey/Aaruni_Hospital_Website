@@ -91,6 +91,157 @@
   <br>
   <!--**************************** Header End ****************************-->
 
+  <!---------------------------ABOUT US STARTS---------------------------->
+
+  <section id="about" class="about">
+
+    <h2> About <span> Us </span> </h2>
+
+    <div class="row">
+
+      <div class="image">
+        <img src="./assets/WallpaperDog-20499790.jpeg" height="450px" width="100%" loading="lazy">
+      </div>
+
+      <div class="content">
+        <h3>Serving people for more than 25+ years </h3>
+        <p> Aaruni Hospital Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus, ipsam.</p>
+
+        <div class="p-inner">
+          <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde vero nemo quasi ea amet quia distinctio
+            sapiente, alias ipsam fugiat, ab atque. Iusto dignissimos voluptatem cumque dolorem. Nisi labore facilis
+            animi, consectetur modi dolores debitis consectetur modi dolores debitis rerum pariatur distinctio cumque,
+            officia, enim quos odio. Nisi sequi amet aut.</p>
+        </div>
+        <div class="readmore">
+          <a href="#"> <button type="button" class="btn btn-light">
+              Read More</button> </a>
+        </div>
+      </div>
+    </div>
+<!-- counter -->
+<div>
+  <style>
+    .containerC{
+       background-color: rgb(75 197 235 / 10%);
+    }
+    .counterheading{
+      text-align: center;
+      font-weight: bold;
+      font-size: 25px;
+      color: #4a4bc0;
+   }
+   .stats{
+    font-weight: bold;
+    color: #4a4bc0;
+   }
+   .statsno{
+    font-size: 26px;
+    font-weight: bold;
+    color: #4cc9f0;
+   }
+    /* p{
+    text-align: center;
+    } */
+  </style>
+    <p>
+    <div class="counterheading">lorem ipsum</div>
+    <div class="d-flex justify-content-center fs-1 fw-bold "style="color: #016064;"></div>
+    </p>
+    <p>
+    <div class="containerC">
+       <div class="row">
+           <div class="col-sm">
+              <p class="statsno"><span id='0103'>12</span>+</p>
+              <p class="stats">PATIENTS SERVED</p>
+           </div>
+          <div class="col-sm">
+             <p id='0101' class="statsno">0</p>
+             <p class="stats">DOCTORS</p>
+          </div>
+          <div class="col-sm">
+             <p id='0102' class="statsno">876</p>
+             <p class="stats">WORKING STAFF</p>
+       </div>
+    </div>
+  </div>
+  </p>
+  <script>
+    function animate(obj, initVal, lastVal, duration) {
+       let startTime = null;
+  
+    //get the current timestamp and assign it to the currentTime variable
+    let currentTime = Date.now();
+  
+    //pass the current timestamp to the step function
+    const step = (currentTime ) => {
+  
+    //if the start time is null, assign the current time to startTime
+    if (!startTime) {
+       startTime = currentTime ;
+    }
+  
+    //calculate the value to be used in calculating the number to be displayed
+    const progress = Math.min((currentTime - startTime)/ duration, 1);
+  
+    //calculate what to be displayed using the value gotten above
+    obj.innerHTML = Math.floor(progress * (lastVal - initVal) + initVal);
+  
+    //checking to make sure the counter does not exceed the last value (lastVal)
+    if (progress < 1) {
+       window.requestAnimationFrame(step);
+    } else {
+          window.cancelAnimationFrame(window.requestAnimationFrame(step));
+       }
+    };
+    //start animating
+       window.requestAnimationFrame(step);
+    }
+    let text1 = document.getElementById('0101');
+    let text2 = document.getElementById('0102');
+    let text3 = document.getElementById('0103');
+    const load = () => {
+       animate(text1, 0, 45, 9000);
+       animate(text2, 0, 132, 9000);
+       animate(text3, 100, 911, 9000);
+    }
+  </script>
+  </div>
+  <!-- counter ends----------------------- -->
+  </Section>
+  <!---------------------------ABOUT US ENDS---------------------------->
+
+<!-- ------------------------Our Managing Director Starts---------------------- -->
+
+<section id="manage" class="manage">
+
+  <h2> Our  <span>Managing Director </span> </h2>
+
+  <div class="dir">
+
+    <div class="con">
+      <h3>Dr. Sunil Poonia </h3>
+      <p> Aaruni Hospital Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus, ipsam.</p>
+
+      <div class="inner">
+        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde vero nemo quasi ea amet quia distinctio
+          sapiente, alias ipsam fugiat, ab atque. Iusto dignissimos voluptatem cumque dolorem. Nisi labore facilis
+          animi, consectetur modi dolores debitis consectetur modi dolores debitis rerum pariatur distinctio cumque,
+          officia, enim quos odio. Nisi sequi amet aut.</p>
+      </div>
+      <div class="readmore">
+        <a href="#"> <button type="button" class="btn btn-light">
+            Read More</button> </a>
+      </div>
+    </div>
+
+    <div class="image">
+      <img src="./assets/WallpaperDog-20499790.jpeg" height="450px" width="100%" loading="lazy">
+
+    </div>
+  </div>
+    <!-- ------------------------Our Managing Director Ends ---------------------- -->
+
 
   <!-- ======================  Services Section STARTS  ===================== -->
 
@@ -150,6 +301,40 @@
   </section>
 
   <!-- ======================  Services Section ENDS  ===================== -->
+
+<!---------------------------WHY CHOOSE US STARTS---------------------------->
+
+<section class="choose">
+
+  <h2> Why <span>Choose Us </span> </h2>
+
+  <div class="choose-row">
+
+    <div class="choose-image">
+      <img src="./assets/logo.jpeg" height="450px" width="100%" loading="lazy">
+
+    </div>
+
+    <div class="choose-content">
+      <h3>Our reputation for outstanding care and family-like atmosphere </h3>
+      <ul>
+        <li> Lorem ipsum dolor sit amet consectetur adipisicing elit. </li>
+        <li> Lorem ipsum dolor sit amet consectetur adipisicing elit. </li>
+        <li> Lorem ipsum dolor sit amet consectetur adipisicing elit. </li>
+        <li> Lorem ipsum dolor sit amet consectetur adipisicing elit. </li>
+        <li> Lorem ipsum dolor sit amet consectetur adipisicing elit. </li>
+        <li> Lorem ipsum dolor sit amet consectetur adipisicing elit. </li>
+
+      </ul>
+      <div class="choose-readmore">
+        <a href="#"> <button type="button" class="btn btn-light">
+            Read More</button> </a>
+      </div>
+    </div>
+  </div>
+</Section>
+
+<!---------------------------WHY CHOOSE US ENDS---------------------------->
 
   <!---------------------------OUR Department START---------------------------->
 
@@ -233,197 +418,6 @@
   </section>
   <!---------------------------OUR Department ENDS---------------------------->
 
-
-  <!---------------------------ABOUT US STARTS---------------------------->
-
-  <section id="about" class="about">
-
-    <h2> About <span> Us </span> </h2>
-
-    <div class="row">
-
-      <div class="content">
-        <h3>Serving people for more than 25+ years </h3>
-        <p> Aaruni Hospital Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus, ipsam.</p>
-
-        <div class="p-inner">
-          <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde vero nemo quasi ea amet quia distinctio
-            sapiente, alias ipsam fugiat, ab atque. Iusto dignissimos voluptatem cumque dolorem. Nisi labore facilis
-            animi, consectetur modi dolores debitis consectetur modi dolores debitis rerum pariatur distinctio cumque,
-            officia, enim quos odio. Nisi sequi amet aut.</p>
-        </div>
-        <div class="readmore">
-          <a href="#"> <button type="button" class="btn btn-light">
-              Read More</button> </a>
-        </div>
-      </div>
-
-      <div class="image">
-        <img src="./assets/WallpaperDog-20499790.jpeg" height="450px" width="100%" loading="lazy">
-
-      </div>
-    </div>
-<!-- counter -->
-<div>
-  <style>
-    .containerC{
-       background-color: rgb(75 197 235 / 10%);
-    }
-    .counterheading{
-      text-align: center;
-      font-weight: bold;
-      font-size: 25px;
-      color: #4a4bc0;
-   }
-   .stats{
-    font-weight: bold;
-    color: #4a4bc0;
-   }
-   .statsno{
-    font-size: 26px;
-    font-weight: bold;
-    color: #4cc9f0;
-   }
-    p{
-    text-align: center;
-    }
-  </style>
-    <p>
-    <div class="counterheading">lorem ipsum</div>
-    <div class="d-flex justify-content-center fs-1 fw-bold "style="color: #016064;"></div>
-    </p>
-    <p>
-    <div class="containerC">
-       <div class="row">
-           <div class="col-sm">
-              <p class="statsno"><span id='0103'>12</span>+</p>
-              <p class="stats">PATIENTS SERVED</p>
-           </div>
-          <div class="col-sm">
-             <p id='0101' class="statsno">0</p>
-             <p class="stats">DOCTORS</p>
-          </div>
-          <div class="col-sm">
-             <p id='0102' class="statsno">876</p>
-             <p class="stats">WORKING STAFF</p>
-       </div>
-    </div>
-  </div>
-  </p>
-  <script>
-    function animate(obj, initVal, lastVal, duration) {
-       let startTime = null;
-  
-    //get the current timestamp and assign it to the currentTime variable
-    let currentTime = Date.now();
-  
-    //pass the current timestamp to the step function
-    const step = (currentTime ) => {
-  
-    //if the start time is null, assign the current time to startTime
-    if (!startTime) {
-       startTime = currentTime ;
-    }
-  
-    //calculate the value to be used in calculating the number to be displayed
-    const progress = Math.min((currentTime - startTime)/ duration, 1);
-  
-    //calculate what to be displayed using the value gotten above
-    obj.innerHTML = Math.floor(progress * (lastVal - initVal) + initVal);
-  
-    //checking to make sure the counter does not exceed the last value (lastVal)
-    if (progress < 1) {
-       window.requestAnimationFrame(step);
-    } else {
-          window.cancelAnimationFrame(window.requestAnimationFrame(step));
-       }
-    };
-    //start animating
-       window.requestAnimationFrame(step);
-    }
-    let text1 = document.getElementById('0101');
-    let text2 = document.getElementById('0102');
-    let text3 = document.getElementById('0103');
-    const load = () => {
-       animate(text1, 0, 45, 9000);
-       animate(text2, 0, 132, 9000);
-       animate(text3, 100, 911, 9000);
-    }
-  </script>
-  </div>
-  <!-- counter ends----------------------- -->
-  </Section>
-  <!---------------------------ABOUT US ENDS---------------------------->
-
-
-  <!---------------------------WHY CHOOSE US STARTS---------------------------->
-
-  <section class="choose">
-
-    <h2> Why <span>Choose Us </span> </h2>
-
-    <div class="choose-row">
-
-      <div class="choose-image">
-        <img src="./assets/logo.jpeg" height="450px" width="100%" loading="lazy">
-
-      </div>
-
-      <div class="choose-content">
-        <h3>Our reputation for outstanding care and family-like atmosphere </h3>
-        <ul>
-          <li> Lorem ipsum dolor sit amet consectetur adipisicing elit. </li>
-          <li> Lorem ipsum dolor sit amet consectetur adipisicing elit. </li>
-          <li> Lorem ipsum dolor sit amet consectetur adipisicing elit. </li>
-          <li> Lorem ipsum dolor sit amet consectetur adipisicing elit. </li>
-          <li> Lorem ipsum dolor sit amet consectetur adipisicing elit. </li>
-          <li> Lorem ipsum dolor sit amet consectetur adipisicing elit. </li>
-
-        </ul>
-        <div class="choose-readmore">
-          <a href="#"> <button type="button" class="btn btn-light">
-              Read More</button> </a>
-        </div>
-      </div>
-
-    </div>
-  </Section>
-
-  <!---------------------------WHY CHOOSE US ENDS---------------------------->
-
-
-  
-
-    <!-- ------------------------Our Managing Director Starts---------------------- -->
-
-    <section id="manage" class="manage">
-
-      <h2> Our  <span>Managing Director </span> </h2>
-  
-      <div class="dir">
-  
-        <div class="con">
-          <h3>Dr. Lorem, ipsum. </h3>
-          <p> Aaruni Hospital Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus, ipsam.</p>
-  
-          <div class="inner">
-            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde vero nemo quasi ea amet quia distinctio
-              sapiente, alias ipsam fugiat, ab atque. Iusto dignissimos voluptatem cumque dolorem. Nisi labore facilis
-              animi, consectetur modi dolores debitis consectetur modi dolores debitis rerum pariatur distinctio cumque,
-              officia, enim quos odio. Nisi sequi amet aut.</p>
-          </div>
-          <div class="readmore">
-            <a href="#"> <button type="button" class="btn btn-light">
-                Read More</button> </a>
-          </div>
-        </div>
-  
-        <div class="image">
-          <img src="./assets/WallpaperDog-20499790.jpeg" height="450px" width="100%" loading="lazy">
-  
-        </div>
-      </div>
-        <!-- ------------------------Our Managing Director Ends ---------------------- -->
 
   <!---------------------------Our Blogs starts---------------------------->
   <section id="blogs">
@@ -534,7 +528,6 @@
 
   <!-- ---------------------Our Blogs ends----------------------->
 
-  
 
   <!-- ----------------------- FOOTER STARTS----------------------->
 
