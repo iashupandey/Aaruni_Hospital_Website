@@ -522,11 +522,11 @@ nav .container .logo img {
 
 /* ------------------ABOUT US CSS STARTS-------------------- */
 
-.about {
-  /* padding-top: 90px; */
+/* .about {
+  padding-top: 90px;
   padding: 20px;
-  /* margin: auto; */
-}
+  margin: auto;
+} */
 
 .about h2 {
   /* border-left: 7px solid #3b5c99; */
@@ -630,11 +630,11 @@ nav .container .logo img {
 
 /* -----------------Managing director Starts */
 
-.manage {
-  /* padding-top: 90px; */
+/* .manage {
+  padding-top: 90px;
   padding: 20px;
-  /* margin: auto; */
-}
+  margin: auto;
+} */
 
 .manage h2 {
   /* border-left: 7px solid #3b5c99; */
@@ -738,11 +738,11 @@ nav .container .logo img {
 
 /* ------------------WHY CHOOSE US CSS STARTS-------------------- */
 
-.choose {
-  /* padding-top: 90px; */
+/* .choose {
+  padding-top: 90px;
   padding: 20px;
-  /* margin: auto; */
-}
+  margin: auto;
+} */
 
 .choose h2 {
   /* border-left: 7px solid #3b5c99; */
@@ -932,10 +932,9 @@ footer{
   margin: auto;
 }
 .footer-container{
-  /* max-width: 1990px; */
   margin: auto;
   height: 300px;
-  padding: 30px;
+  padding: 20px;
 }
 .row {
   width:100%;
@@ -943,6 +942,7 @@ footer{
   justify-content: space-evenly;
   align-items: center;
   flex-wrap: wrap;
+  /* padding: 30px; */
 }
 .footer-col {
   width: 23%;
