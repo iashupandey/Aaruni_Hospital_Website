@@ -1527,13 +1527,13 @@ textarea {
 }
 
 .contact-form {
-  background-color: #1abc9c;
+  background-color: #0c52a8;
   position: relative;
 }
 
 .circle {
   border-radius: 50%;
-  background: linear-gradient(135deg, transparent 20%, #149279);
+  background: linear-gradient(135deg, transparent 20%, #145192);
   position: absolute;
 }
 
@@ -1556,7 +1556,7 @@ textarea {
   position: absolute;
   width: 26px;
   height: 26px;
-  background-color: #1abc9c;
+  background-color: #1a73bc;
   transform: rotate(45deg);
   top: 50px;
   left: -13px;
@@ -1628,7 +1628,7 @@ textarea.input {
   background-color: #fff;
   border: 2px solid #fafafa;
   font-size: 0.95rem;
-  color: #1abc9c;
+  color: #1c5fd4;
   line-height: 1;
   border-radius: 25px;
   outline: none;
@@ -1662,7 +1662,7 @@ textarea.input {
   opacity: 0;
   transition: 0.3s;
   height: 5px;
-  background-color: #1abc9c;
+  background-color: #1a50bc;
   top: 50%;
   transform: translateY(-50%);
 }
@@ -1694,11 +1694,15 @@ textarea.input {
 }
 
 .contact-info .title {
-  color: #1abc9c;
+  color: #1c5fd4;
 }
 
 .text {
-  color: #333;
+  color: rgb(51, 51, 51);
+  font-size: 1.5rem;
+  padding-right: 75px;
+  font-weight: 500;
+
   margin: 1.5rem 0 2rem 0;
 }
 
@@ -1712,8 +1716,10 @@ textarea.input {
 
 .icon {
   width: 28px;
+filter: hue-rotate(45deg);
   margin-right: 0.7rem;
 }
+
 
 .social-media {
   padding: 2rem 0 0 0;
@@ -1732,7 +1738,7 @@ textarea.input {
   width: 35px;
   height: 35px;
   border-radius: 5px;
-  background: linear-gradient(45deg, #1abc9c, #149279);
+  background: linear-gradient(45deg, #1a5dbc, #144f92);
   color: #fff;
   text-align: center;
   line-height: 35px;
@@ -1749,7 +1755,7 @@ textarea.input {
   position: absolute;
   width: 110px;
   height: 100px;
-  border: 22px solid #1abc9c;
+  border: 22px solid #1c5fd4;
   border-radius: 50%;
   bottom: -77px;
   right: 50px;
@@ -1761,7 +1767,7 @@ textarea.input {
   width: 500px;
   height: 500px;
   border-radius: 50%;
-  background: linear-gradient(to bottom, #1cd4af, #159b80);
+  background: linear-gradient(to bottom, #1c5fd4, #1c5fd4);
   bottom: 50%;
   right: 50%;
   transform: translate(-40%, 38%);
@@ -1874,4 +1880,3 @@ textarea.input {
 }
 
 /* ======================= Make Appointment Section ends ======================= */
-
