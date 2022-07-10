@@ -535,13 +535,13 @@ nav .container .logo img {
   height: 100px;
   bottom: 0;
   right: 0;
-  margin: 35px 25px;
+  margin: 20px 25px;
 }
 .floating-container:hover {
   height: 300px;
 }
 .floating-container:hover .floating-button {
-  box-shadow: 0 10px 25px rgba(44, 179, 240, 0.6);
+  box-shadow: 0 10px 25px rgb(0 105 204);
   -webkit-transform: translatey(5px);
           transform: translatey(5px);
   -webkit-transition: all 0.3s;
@@ -563,12 +563,14 @@ nav .container .logo img {
   position: absolute;
   width: 65px;
   height: 65px;
-  background: #2cb3f0;
+  background: rgb(0 105 204);
+  /* Change in colour by Dev */
   bottom: 0;
   border-radius: 50%;
   left: 0;
   right: 0;
-  margin: auto;
+  margin: -10px 0px;
+  /* Change in margin by Dev */
   color: white;
   line-height: 65px;
   text-align: center;
@@ -600,7 +602,7 @@ nav .container .logo img {
   font-size: 16px;
 }
 .floating-container .float-element:nth-child(1) {
-  background: #42A5F5;
+  background: rgb(0 105 204);
   box-shadow: 0 20px 20px -10px rgba(66, 165, 245, 0.5);
 }
 .floating-container .float-element:nth-child(2) {
@@ -998,6 +1000,100 @@ nav .container .logo img {
 }
 
 /* ------------------OUR DEPARTMENT CSS ENDS-------------------- */
+
+/* -------------------Technology css starts---------------------- */
+#technology .techmain{
+  position: relative;
+  display: flex;
+  /* flex-direction: column; */
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2rem 2rem;
+}
+
+.techcontainer {
+  background: linear-gradient(135deg, #480ca8, #4cc9f0);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 45%;
+  height: 100%;
+  margin: 2rem;
+  /* border: 2px solid black;
+   */
+  border-radius: 5px;
+}
+#techimg{
+  width: 48%;
+  height: 100%;
+}
+.techcontainer img {
+  width: 100%;
+  height: 100%;
+}
+
+.techtitle {
+  width: 85%;
+  color: white;
+  margin-bottom: 0.4rem;
+}
+.techtitle small{
+  font-size: 0.9rem;
+}
+.othercont h4{
+  font-size: 1.3rem;
+  margin: 0.5rem 0rem;
+  font-family: "Poppins", sans-serif;
+}
+.othercont{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  width: 45%;
+}
+
+#technology h2 span {
+  color: rgb(38, 38, 38);
+  font-size: 38px;
+  font-weight: 700;
+  padding-bottom: 50px;
+  align-content: center;
+}
+#technology h2 {
+  display: block;
+  height: 47px;
+  padding-left: 14px;
+  color: rgb(74, 75, 192);
+  font-size: 38px;
+  font-weight: 700;
+  padding-bottom: 50px;
+  margin: auto;
+  text-align: center;
+}
+#technology .readmore{
+  /* margin: 1.5rem 0rem; */
+}
+
+#technology .readmore a {
+  color: white;
+  font-size: 0.8rem;
+  padding: 0.4rem;
+  border: 1px solid white;
+  /* background-color: #14b8eb; */
+  border-radius: 12px;
+}
+#technology .readmore:hover{
+  /* background-color: #4a4bc0; */
+  border-radius: 12px;
+}
+#technology.readmore:active{
+  background-color: #14b8eb;
+}
+/* -------------------Technology css ends------------------------ */
 
 /* ------------------Our Blogs starts-------------------------- */
 #blogs {
