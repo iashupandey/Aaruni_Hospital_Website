@@ -251,6 +251,13 @@ nav .container .logo img {
   width: 100%;
   border-radius: 10px;
 }
+nav .container ul li:nth-child(5) 
+{
+height: 60px;
+width: 70px;
+/* filter: invert(1); */
+
+}
 /*-------------- Media Queries (Medium devices) -----------------*/
 @media screen and (max-width: 1024px) {
   nav .container button {
