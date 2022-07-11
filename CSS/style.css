@@ -43,7 +43,7 @@ h5 {
 
 #navbar{
   position: fixed;
-  height: 110px;
+  /* height: 110px; */
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -233,9 +233,9 @@ img {
   color: rgb(3, 2, 2);
 }
 
-/* .swiper-pagination {
+.swiper-pagination {
   margin: 20px;
-} */
+}
 
 .swiper .swiper-pagination-bullet-active {
   background: #1363ec;
@@ -250,38 +250,69 @@ img {
 /*--------------------------- Appointment & Call button css start-------------------- */
 .float {
   position: fixed;
-  width: 240px;
-  height: 37px;
+  width: 260px;
+  height: 50px;
   bottom: 15px;
-  right: 350px;
-  background-color: rgb(0, 105, 204);
-  color: #FFF;
-  padding: 5px;
-  font-weight: bold;
-  border-radius: 10px;
-  text-align: center;
-  justify-content: center;
+  right: 370px;
+  background-color:  rgb(39, 65, 89);
+  border-radius: 25px;
   box-shadow: 2px 2px 3px #999;
   cursor: pointer;
   z-index: 10;
+  overflow: hidden;
 }
+.float a{
+  color: #FFF;
+  font-weight: 700;
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+  padding-right:65px;
+  line-height: 49px;
+  font-size: larger;
+  
+}
+.float img{
+  height: 50px;
+  width: 50px;
+  padding: 0;
+  margin: 0;
+  vertical-align: middle;
+  border-radius: 50%;
+}
+
 
 .float2 {
   position: fixed;
-  width: 240px;
-  height: 37px;
+  width: 260px;
+  height: 50px;
   bottom: 15px;
-  left: 350px;
-  font-weight: bolder;
-  background-color: rgb(0, 105, 204);
-  color: #FFF;
-  padding: 5px;
-  border-radius: 10px;
-  text-align: center;
-  justify-content: center;
-  box-shadow: 2px 2px 3px #999;
+  left: 370px;
+  background-color: rgb(39, 65, 89);
+  border-radius: 25px;
+  box-shadow: 2px 2px 3px  #999;
   cursor: pointer;
   z-index: 10;
+  overflow: hidden;
+}
+.float2 a{
+  color: #FFF;
+  font-weight:700;
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+  padding-right: 7px;
+  line-height: 49px;
+  font-size: larger;
+  
+}
+.float2 img{
+  height: 50px;
+  width: 50px;
+  padding: 0;
+  margin: 0;
+  vertical-align: middle;
+  border-radius: 50%;
 }
 
 /*--------------------------- Appointment & Call button css ends-------------------- */
@@ -376,7 +407,7 @@ img {
   position: absolute;
   width: 65px;
   height: 65px;
-  background: rgb(0 105 204);
+  background: rgb(39, 65, 89);
   /* Change in colour by Dev */
   bottom: 0;
   border-radius: 50%;
@@ -1108,6 +1139,8 @@ img {
   margin: 35px;
   cursor: pointer;
   border-radius: 20px;
+  transition: all 200ms ease;
+
 }
 
 .profile-img {
@@ -1161,7 +1194,9 @@ img {
   font-size: 0.9rem;
   color: #4b4b4b;
 }
-
+.testimonial-box:hover {
+  box-shadow: 0 0 3px 3px #4a4bc0;
+}
 /* ------------------------- CUSTOMER REVIEW CSS ENDS----------------------- */
 
 
