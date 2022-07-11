@@ -41,92 +41,72 @@ h5 {
 
 /* ---------------------------NAVIGATION SECTION CSS STARTS-------------------- */
 
-
-/* .btn {
-  display: inline-block;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  padding: 0.75rem 1rem;
-  border-radius: 0.4rem;
-  background: #f72585;
-  color: #ffffff;
-  cursor: pointer;
-  transition: all 400ms ease;
-}
-.btn:hover {
-  background: #f84c9b;
-  box-shadow: 0 1rem 1.6rem rgba(12, 3, 27, 0.15);
-}
-
-
-nav {
-  width: 100vw;
-  height: 5rem;
+#navbar{
   position: fixed;
-  z-index: 10;
-  display: grid;
-  place-items: center;
-  background: linear-gradient(135deg, #480ca8, #4cc9f0);
-  color: #ffffff;
-  box-shadow: 0 1rem 1rem rgba(12, 3, 27, 0.1);
-  overflow: hidden;
-}
-nav .container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-nav .container ul {
-  display: flex;
-  gap: 3rem;
-  align-items: center;
-}
-nav .container ul li:hover:nth-child(1) {
-  padding-top: 10px;
-  transition: 0.3s;
-  border-bottom: 2px solid #ffffff;
-}
-nav .container ul li:hover:nth-child(2) {
-  padding-top: 10px;
-  transition: 0.3s;
-  border-bottom: 2px solid #ffffff;
-}
-nav .container ul li:hover:nth-child(3) {
-  padding-top: 10px;
-  transition: 0.3s;
-  border-bottom: 2px solid #ffffff;
-}
-nav .container ul li:hover:nth-child(4) {
-  padding-top: 10px;
-  transition: 0.3s;
-  border-bottom: 2px solid #ffffff;
-}
-nav .container button {
-  display: none;
-}
-nav .container a {
-  color: #ffffff;
-  font-weight: 600;
-  font-size: 1rem;
-  align-items: center;
-}
-nav .container .logo {
-  margin-left: -40px;
-}
-nav .container .logo img {
-  height: 70px;
+  height: 130px;
   width: 100%;
-  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  z-index: 100;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #480ca8, #4cc9f0);
 }
-nav .container ul li:nth-child(5) 
-{
-height: 60px;
-width: 70px;
-filter: invert(1);
-
-} */
-
+.doublecontr{
+  display: flex;
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.navcnt1{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: center;
+}
+.midnav{
+  display: flex;
+  width: 65%;
+  flex-direction: row;
+  justify-content:space-between;
+  align-items: center;
+}
+.midnav li a{
+  margin: 0.2rem 0.5rem;
+  color: white;
+  font-family: 'Albert Sans', sans-serif;
+  font-weight:500;
+}
+.iconcntr{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-end;
+  width: 20%;
+  margin: 0.5rem 0rem;
+}
+.iconcntr img{
+  height: 50px;
+  width: 50px;
+  margin: 0rem 0.5rem;
+  border-radius: 40px;
+}
+.iconcntr2 img{
+  height: 40px;
+  width: 40px;
+}
+.imgcnt{
+  width: 20%;
+}
+.imgcnt img{
+  height: 100%;
+  width: 45%;
+}
 
 /* ---------------------------NAVIGATION SECTION CSS ENDS-------------------- */
 
