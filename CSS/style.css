@@ -1024,6 +1024,7 @@ width: 70px;
   /* border: 2px solid black;
    */
   border-radius: 15px;
+  transition: all 400ms ease-in-out;
 }
 #techimg{
   width: 48%;
@@ -1092,13 +1093,17 @@ width: 70px;
   /* background-color: #14b8eb; */
   border-radius: 12px;
 }
-#technology .readmore:hover{
-  /* background-color: #4a4bc0; */
+#technology .readmore a:hover{
+  background-color: #4a4bc0;
   border-radius: 12px;
 }
-#technology.readmore:active{
+#technology .readmore a:active{
   background-color: #14b8eb;
 }
+.techcontainer:hover {
+  margin-top: -0.5rem;
+}
+
 /* -------------------Technology css ends------------------------ */
 
 /* ------------------Our Blogs starts-------------------------- */
