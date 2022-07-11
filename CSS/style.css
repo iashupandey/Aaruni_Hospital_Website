@@ -1366,17 +1366,20 @@ textarea {
 .container1 {
   position: relative;
   width: 100%;
-  min-height: 100vh;
+  min-height: 130vh;
   padding: 2rem;
   background-color: #fafafa;
   overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
+  z-index: 12;
+  padding-top: 180px;
+  padding-left: 90px;
 }
 
 .form {
-  width: 100%;
+  width: 150%;
   max-width: 820px;
   background-color: #fff;
   border-radius: 10px;
@@ -1635,7 +1638,7 @@ textarea.input {
   background: linear-gradient(to bottom, #1c5fd4, #1c5fd4);
   bottom: 50%;
   right: 45%;
-  transform: translate(-40%, 38%);
+  transform: translate(-40%, 45%);
 }
 
 .big-circle:after {
