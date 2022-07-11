@@ -43,7 +43,7 @@ h5 {
 
 #navbar{
   position: fixed;
-  height: 130px;
+  height: 110px;
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -56,7 +56,6 @@ h5 {
 .doublecontr{
   display: flex;
   width: 75%;
-  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -80,7 +79,17 @@ h5 {
   margin: 0.2rem 0.5rem;
   color: white;
   font-family: 'Albert Sans', sans-serif;
+  font-size: 1.3rem;
   font-weight:500;
+  transition: all 200ms ease;
+}
+.midnav li a:hover{
+  font-weight: 600;
+  border-bottom: 2px solid white;
+}
+.midnav li a:active{
+  border-bottom: none;
+  font-weight: 500;
 }
 .iconcntr{
   display: flex;
@@ -91,14 +100,10 @@ h5 {
   margin: 0.5rem 0rem;
 }
 .iconcntr img{
-  height: 50px;
-  width: 50px;
+  height: 36px;
+  width: 40px;
   margin: 0rem 0.5rem;
   border-radius: 40px;
-}
-.iconcntr2 img{
-  height: 40px;
-  width: 40px;
 }
 .imgcnt{
   width: 20%;
@@ -106,6 +111,7 @@ h5 {
 .imgcnt img{
   height: 100%;
   width: 45%;
+  border-radius: 20px;
 }
 
 /* ---------------------------NAVIGATION SECTION CSS ENDS-------------------- */
@@ -180,6 +186,7 @@ img {
   position: relative;
   width: 100%;
   height: 100%;
+  padding-top: 90px;
 }
 
 .swiper {
@@ -226,9 +233,9 @@ img {
   color: rgb(3, 2, 2);
 }
 
-.swiper-pagination {
-  /* margin: 20px; */
-}
+/* .swiper-pagination {
+  margin: 20px;
+} */
 
 .swiper .swiper-pagination-bullet-active {
   background: #1363ec;
