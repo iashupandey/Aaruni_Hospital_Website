@@ -11,14 +11,6 @@
   box-sizing: border-box;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5 {
-  color: #ffffff;
-}
-
 html {
   scroll-behavior: smooth;
 }
@@ -1014,7 +1006,7 @@ width: 70px;
   display: flex;
   /* flex-direction: column; */
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   margin: 2rem 2rem;
 }
@@ -1025,12 +1017,13 @@ width: 70px;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  width: 45%;
-  height: 100%;
+  overflow: hidden;
+  width: 42%;
+  height: 250px;
   margin: 2rem;
   /* border: 2px solid black;
    */
-  border-radius: 5px;
+  border-radius: 15px;
 }
 #techimg{
   width: 48%;
@@ -1045,11 +1038,14 @@ width: 70px;
   width: 85%;
   color: white;
   margin-bottom: 0.4rem;
+  padding-top: 10px;
 }
 .techtitle small{
   font-size: 0.9rem;
+  margin-top: 20px;
 }
 .othercont h4{
+  color: #ffffff;
   font-size: 1.3rem;
   margin: 0.5rem 0rem;
   font-family: "Poppins", sans-serif;
@@ -1060,7 +1056,9 @@ width: 70px;
   flex-wrap: wrap;
   justify-content: flex-start;
   align-items: center;
-  width: 45%;
+  width: 50%;
+  height: 100%;
+  padding: 10px;
 }
 
 #technology h2 span {
@@ -1082,7 +1080,8 @@ width: 70px;
   text-align: center;
 }
 #technology .readmore{
-  /* margin: 1.5rem 0rem; */
+  /* margin: 2.5rem 0rem; */
+  padding-top: 15px;
 }
 
 #technology .readmore a {
@@ -1696,6 +1695,9 @@ textarea.input {
 .contact-info .title {
   color: #1c5fd4;
 }
+.contact-info .text{
+  color: #1c5fd4;
+}
 
 .text {
   color: rgb(51, 51, 51);
@@ -1769,7 +1771,7 @@ filter: hue-rotate(45deg);
   border-radius: 50%;
   background: linear-gradient(to bottom, #1c5fd4, #1c5fd4);
   bottom: 50%;
-  right: 50%;
+  right: 45%;
   transform: translate(-40%, 38%);
 }
 
