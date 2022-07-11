@@ -26,91 +26,8 @@ body {
   user-select: none;
 }
 
-/* slider css */
-
-/* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
-}
-
-/* Caption text */
-.text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-}
-
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
-/* The dots/bullets/indicators */
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.active, .dot:hover {
-  background-color: #717171;
-}
-
-/* Fading animation */
-.fade {
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}
-/* slider ends */
-
-.container {
-  width: 82%;
-  margin: 0 auto;
-}
-
-img {
-  display: block;
-  width: 100%;
+section {
+  margin-top: 4rem;
 }
 
 h1,
@@ -121,19 +38,11 @@ h5 {
   line-height: 1.2;
 }
 
-section {
-  margin-top: 4rem;
-}
-section > h2 {
-  text-align: center;
-}
-section > p {
-  text-align: center;
-  width: 42%;
-  margin: 0.6rem auto 2.5rem;
-}
 
-.btn {
+/* ---------------------------NAVIGATION SECTION CSS STARTS-------------------- */
+
+
+/* .btn {
   display: inline-block;
   width: -webkit-fit-content;
   width: -moz-fit-content;
@@ -150,43 +59,11 @@ section > p {
   box-shadow: 0 1rem 1.6rem rgba(12, 3, 27, 0.15);
 }
 
-.btn-primary {
-  display: inline-block;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  padding: 0.75rem 1rem;
-  border-radius: 0.4rem;
-  background: #480ca8;
-  color: #ffffff;
-  cursor: pointer;
-  transition: all 400ms ease;
-}
-.btn-primary:hover {
-  background: #580fce;
-  box-shadow: 0 1rem 1.6rem rgba(12, 3, 27, 0.15);
-}
 
-/*--------- Media Queries (Medium devices)-----------*/
-@media screen and (max-width: 1024px) {
-  .container {
-    width: 90%;
-  }
-
-  section > p {
-    width: 90%;
-  }
-}
-/*--------- Media Queries (Small  devices)-----------*/
-@media screen and (max-width: 600px) {
-  section > p {
-    width: 90%;
-  }
-}
 nav {
   width: 100vw;
   height: 5rem;
-  /* position: fixed; */
+  position: fixed;
   z-index: 10;
   display: grid;
   place-items: center;
@@ -233,7 +110,6 @@ nav .container a {
   font-weight: 600;
   font-size: 1rem;
   align-items: center;
-  /* list-style: none; */
 }
 nav .container .logo {
   margin-left: -40px;
@@ -247,128 +123,42 @@ nav .container ul li:nth-child(5)
 {
 height: 60px;
 width: 70px;
-/* filter: invert(1); */
+filter: invert(1);
 
-}
-/*-------------- Media Queries (Medium devices) -----------------*/
-@media screen and (max-width: 1024px) {
-  nav .container button {
-    display: inline-block;
-    background: transparent;
-    color: #ffffff;
-    font-size: 2rem;
-    cursor: pointer;
-  }
-  nav .container button#close__nav-btn {
-    display: none;
-  }
-  nav .container ul {
-    position: fixed;
-    right: 5%;
-    top: 5rem;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 0;
-    display: none;
-    /* list-style: none; */
-  }
-  nav .container ul li {
-    width: 100%;
-    opacity: 0;
-    -webkit-animation: flipNavItem 300ms ease forwards;
-    animation: flipNavItem 300ms ease forwards;
-    transform-origin: top;
-  }
-  nav .container ul li:nth-child(2) {
-    -webkit-animation-delay: 150ms;
-    animation-delay: 150ms;
-  }
-  nav .container ul li:nth-child(3) {
-    -webkit-animation-delay: 300ms;
-    animation-delay: 300ms;
-  }
-  nav .container ul li:nth-child(4) {
-    -webkit-animation-delay: 450ms;
-    animation-delay: 450ms;
-  }
-  nav .container ul li:nth-child(5) {
-    -webkit-animation-delay: 600ms;
-    animation-delay: 600ms;
-  }
-  @-webkit-keyframes flipNavItem {
-    0% {
-      transform: rotateX(90deg);
-    }
-    100% {
-      transform: rotateX(0deg);
-      opacity: 1;
-    }
-  }
-  @keyframes flipNavItem {
-    0% {
-      transform: rotateX(90deg);
-    }
-    100% {
-      transform: rotateX(0deg);
-      opacity: 1;
-    }
-  }
-  nav .container ul li a {
-    color: #ffffff;
-    height: 100%;
-    display: block;
-    padding: 1.5rem 2rem;
-    border-radius: 0;
-    background: linear-gradient(#4cc9f0, #14b8eb);
-  }
-  nav .container ul li a.btn {
-    background: #f72585;
-  }
-}
+} */
 
-/*---------------------------- Media Queries (Medium devices) -------------------------*/
-@media screen and (max-width: 1024px) {
-  header {
-    height: 60vh;
-  }
-  header .container {
-    gap: 1rem;
-  }
-  header .container .header__content h1 {
-    font-size: 2.5rem;
-  }
-}
-/*---------------------------- Media Queries (Small devices) -------------------------*/
-@media screen and (max-width: 600px) {
-  header {
-    height: 100vh;
-    padding-top: 3rem;
-  }
-  header .container {
-    grid-template-columns: 1fr;
-    text-align: center;
-  }
-  header .container .header__content {
-    margin: 0.8rem 0 1.5rem;
-    line-height: 1.4;
-  }
-}
+
+/* ---------------------------NAVIGATION SECTION CSS ENDS-------------------- */
+
+
+/* ---------------------------SERVICES SECTION CSS START-------------------- */
 
 #services h2 {
   color: #4a4bc0;
   font-size: 38px;
   font-weight: 700;
 }
+
 #services h2 span {
   color: #262626;
   font-size: 38px;
   font-weight: 700;
 }
+
+#services p {
+  text-align: center;
+  width: 42%;
+  margin: 0.6rem auto 2.5rem;
+}
+
 #services .container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
+  width: 82%;
+  margin: 0 auto;
 }
+
 #services .container article {
   background: linear-gradient(135deg, #480ca8, #4cc9f0);
   color: #ffffff;
@@ -381,23 +171,37 @@ width: 70px;
   height: fit-content;
   transition: all 400ms ease;
 }
+
 #services .container article:hover {
   margin-top: -0.5rem;
 }
+
 #services .container article i {
   font-size: 1.5rem;
 }
+
 #services .container article div h4 {
   margin-bottom: 1rem;
-} /*# sourceMappingURL=style.css.map */
+}
 
-/* --------------Header CSS starts------------------------------ */
-#header{
+/*# sourceMappingURL=style.css.map */
+
+/* ---------------------------SERVICES SECTION CSS ENDS-------------------- */
+
+
+/* ------------------------------HEADER SLIDER CSS STARTS------------------------------ */
+img {
+  display: block;
+  width: 100%;
+}
+
+#header {
   margin-top: 0px;
   position: relative;
   width: 100%;
   height: 100%;
 }
+
 .swiper {
   /* display: flex; */
   width: 100%;
@@ -405,12 +209,14 @@ width: 70px;
   z-index: -11;
   /* flex-direction: column; */
 }
-.swiper-wrapper{
+
+.swiper-wrapper {
   width: 100%;
   height: 100%;
   margin: 0px;
   padding: 0px;
 }
+
 .swiper-slide {
   display: flex;
   flex-direction: row;
@@ -422,23 +228,28 @@ width: 70px;
   height: 100%;
   width: 100%;
 }
-#boxheader{
+
+#boxheader {
   height: 100%;
   width: 100%;
 }
-#boxheader img{
+
+#boxheader img {
   width: 100%;
   height: 100%;
   padding: 0px;
   margin: 0px;
 }
+
 .swiper .swiper-button-prev,
 .swiper .swiper-button-next {
   color: rgb(3, 2, 2);
 }
-.swiper-pagination{
+
+.swiper-pagination {
   /* margin: 20px; */
 }
+
 .swiper .swiper-pagination-bullet-active {
   background: #1363ec;
 }
@@ -447,83 +258,93 @@ width: 70px;
   background: black;
 }
 
-/* ---------------------Header CSS ends----------------------------- */
+/* ----------------------------HEADER SLIDER CSS ENDS----------------------------- */
 
-/*--------------------------- button css-------------------- */
-.float{
-	position:fixed;
-	width:240px;
-	height:37px;
-	bottom:15px;
-	right:350px;
-	background-color:rgb(0, 105, 204);
-	color:#FFF;
+/*--------------------------- Appointment & Call button css start-------------------- */
+.float {
+  position: fixed;
+  width: 240px;
+  height: 37px;
+  bottom: 15px;
+  right: 350px;
+  background-color: rgb(0, 105, 204);
+  color: #FFF;
   padding: 5px;
   font-weight: bold;
-	border-radius:10px;
-	text-align:center;
-  justify-content:center;
-	box-shadow: 2px 2px 3px #999;
+  border-radius: 10px;
+  text-align: center;
+  justify-content: center;
+  box-shadow: 2px 2px 3px #999;
   cursor: pointer;
   z-index: 10;
 }
 
-.float2{
-	position:fixed;
-	width:240px;
-	height:37px;
-	bottom:15px;
-	left:350px;
+.float2 {
+  position: fixed;
+  width: 240px;
+  height: 37px;
+  bottom: 15px;
+  left: 350px;
   font-weight: bolder;
-	background-color:rgb(0, 105, 204);
-	color:#FFF;
+  background-color: rgb(0, 105, 204);
+  color: #FFF;
   padding: 5px;
-	border-radius:10px;
-	text-align:center;
-  justify-content:center;
-	box-shadow: 2px 2px 3px #999;
+  border-radius: 10px;
+  text-align: center;
+  justify-content: center;
+  box-shadow: 2px 2px 3px #999;
   cursor: pointer;
   z-index: 10;
 }
 
-/* --------------------------------floating button-------------------------------*/
+/*--------------------------- Appointment & Call button css ends-------------------- */
+
+
+/* --------------------------------floating(+) button css start-------------------------------*/
 @-webkit-keyframes come-in {
   0% {
     -webkit-transform: translatey(100px);
-            transform: translatey(100px);
+    transform: translatey(100px);
     opacity: 0;
   }
+
   30% {
     -webkit-transform: translateX(-50px) scale(0.4);
-            transform: translateX(-50px) scale(0.4);
+    transform: translateX(-50px) scale(0.4);
   }
+
   70% {
     -webkit-transform: translateX(0px) scale(1.2);
-            transform: translateX(0px) scale(1.2);
+    transform: translateX(0px) scale(1.2);
   }
+
   100% {
     -webkit-transform: translatey(0px) scale(1);
-            transform: translatey(0px) scale(1);
+    transform: translatey(0px) scale(1);
     opacity: 1;
   }
 }
+
 @keyframes come-in {
   0% {
     -webkit-transform: translatey(100px);
-            transform: translatey(100px);
+    transform: translatey(100px);
     opacity: 0;
   }
+
   30% {
     -webkit-transform: translateX(-50px) scale(0.4);
-            transform: translateX(-50px) scale(0.4);
+    transform: translateX(-50px) scale(0.4);
   }
+
   70% {
     -webkit-transform: translateX(0px) scale(1.2);
-            transform: translateX(0px) scale(1.2);
+    transform: translateX(0px) scale(1.2);
   }
+
   100% {
     -webkit-transform: translatey(0px) scale(1);
-            transform: translatey(0px) scale(1);
+    transform: translatey(0px) scale(1);
     opacity: 1;
   }
 }
@@ -536,28 +357,34 @@ width: 70px;
   right: 0;
   margin: 20px 25px;
 }
+
 .floating-container:hover {
   height: 300px;
 }
+
 .floating-container:hover .floating-button {
   box-shadow: 0 10px 25px rgb(0 105 204);
   -webkit-transform: translatey(5px);
-          transform: translatey(5px);
+  transform: translatey(5px);
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
+
 .floating-container:hover .element-container .float-element:nth-child(1) {
   -webkit-animation: come-in 0.4s forwards 0.2s;
-          animation: come-in 0.4s forwards 0.2s;
+  animation: come-in 0.4s forwards 0.2s;
 }
+
 .floating-container:hover .element-container .float-element:nth-child(2) {
   -webkit-animation: come-in 0.4s forwards 0.4s;
-          animation: come-in 0.4s forwards 0.4s;
+  animation: come-in 0.4s forwards 0.4s;
 }
+
 .floating-container:hover .element-container .float-element:nth-child(3) {
   -webkit-animation: come-in 0.4s forwards 0.6s;
-          animation: come-in 0.4s forwards 0.6s;
+  animation: come-in 0.4s forwards 0.6s;
 }
+
 .floating-container .floating-button {
   position: absolute;
   width: 65px;
@@ -580,6 +407,7 @@ width: 70px;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
+
 .floating-container .float-element {
   position: relative;
   display: block;
@@ -594,34 +422,35 @@ width: 70px;
   z-index: 0;
   opacity: 0;
   -webkit-transform: translateY(100px);
-          transform: translateY(100px);
+  transform: translateY(100px);
 }
+
 .floating-container .float-element .material-icons {
   vertical-align: middle;
   font-size: 16px;
 }
+
 .floating-container .float-element:nth-child(1) {
   background: rgb(0 105 204);
   box-shadow: 0 20px 20px -10px rgba(66, 165, 245, 0.5);
 }
+
 .floating-container .float-element:nth-child(2) {
   background: #4CAF50;
   box-shadow: 0 20px 20px -10px rgba(76, 175, 80, 0.5);
 }
+
 .floating-container .float-element:nth-child(3) {
   background: #FF9800;
   box-shadow: 0 20px 20px -10px rgba(255, 152, 0, 0.5);
 }
 
 
+/* --------------------------------floating(+) button css ends-------------------------------*/
 
-/* ------------------ABOUT US CSS STARTS-------------------- */
 
-/* .about {
-  padding-top: 90px;
-  padding: 20px;
-  margin: auto;
-} */
+
+/* -------------------------------ABOUT US CSS STARTS------------------------- */
 
 .about h2 {
   /* border-left: 7px solid #3b5c99; */
@@ -688,6 +517,7 @@ width: 70px;
   font-weight: 600;
   padding-bottom: 30px;
 }
+
 .about .content .readmore {
   padding-right: 70px;
 }
@@ -705,11 +535,13 @@ width: 70px;
   font-size: 16px;
   text-decoration: none;
 }
-.about .content .readmore .btn-light:hover{
+
+.about .content .readmore .btn-light:hover {
   background-color: #14b8eb;
   box-shadow: 0 0 1px 1px #14b8eb;
 }
-.about .content .readmore .btn-light:active{
+
+.about .content .readmore .btn-light:active {
   background-color: #4a4bc0;
   box-shadow: none;
 }
@@ -724,21 +556,17 @@ width: 70px;
 .about .row .image {
   flex: 1 1 45rem;
 }
+
 .about .row .image img {
   width: 100%;
   border-radius: 50px;
   /* padding: 5%; */
 }
 
-/* ------------------ABOUT US CSS ENDS-------------------- */
+/* -----------------------------ABOUT US CSS ENDS---------------------- */
 
-/* -----------------Managing director CSS Starts--------------- */
+/* -------------------------Managing director CSS Starts------------------- */
 
-/* .manage {
-  padding-top: 90px;
-  padding: 20px;
-  margin: auto;
-} */
 
 .manage h2 {
   /* border-left: 7px solid #3b5c99; */
@@ -805,6 +633,7 @@ width: 70px;
   font-weight: 600;
   padding-bottom: 30px;
 }
+
 .manage .con .readmore {
   padding-right: 70px;
 }
@@ -822,11 +651,13 @@ width: 70px;
   font-size: 16px;
   text-decoration: none;
 }
-.manage .con .readmore .btn-light:hover{
+
+.manage .con .readmore .btn-light:hover {
   background-color: #14b8eb;
   box-shadow: 0 0 1px 1px #14b8eb;
 }
-.manage .con .readmore .btn-light:active{
+
+.manage .con .readmore .btn-light:active {
   background-color: #4a4bc0;
   box-shadow: none;
 }
@@ -840,21 +671,19 @@ width: 70px;
 .manage .dir .image {
   flex: 1 1 45rem;
 }
+
 .manage .dir .image img {
   width: 100%;
   border-radius: 50px;
   /* padding: 5%; */
 }
 
-/* ------------------Managing director CSS ENDS-------------------- */
+/* ---------------------------Managing director CSS ENDS----------------------- */
 
-/* ------------------WHY CHOOSE US CSS STARTS-------------------- */
 
-/* .choose {
-  padding-top: 90px;
-  padding: 20px;
-  margin: auto;
-} */
+
+/* ------------------------------WHY CHOOSE US CSS STARTS-------------------- */
+
 
 .choose h2 {
   /* border-left: 7px solid #3b5c99; */
@@ -913,9 +742,11 @@ width: 70px;
   font-weight: 600;
   list-style-type: disc;
 }
+
 .choose-content ul li {
   list-style: disc;
 }
+
 .choose .choose-row .choose-content li {
   padding-bottom: 20px;
 }
@@ -933,11 +764,13 @@ width: 70px;
   font-size: 16px;
   text-decoration: none;
 }
-.choose .choose-content .choose-readmore .btn-light:hover{
+
+.choose .choose-content .choose-readmore .btn-light:hover {
   background-color: #14b8eb;
   box-shadow: 0 0 1px 1px #14b8eb;
 }
-.choose .choose-content .choose-readmore .btn-light:active{
+
+.choose .choose-content .choose-readmore .btn-light:active {
   background-color: #4a4bc0;
   box-shadow: none;
 }
@@ -951,17 +784,18 @@ width: 70px;
 .choose .choose-row .choose-image {
   flex: 1 1 45rem;
 }
+
 .choose .choose-row .choose-image img {
   width: 100%;
   border-radius: 50px;
   /* padding: 5%; */
 }
 
-/* ------------------WHY CHOOSE US CSS ENDS-------------------- */
+/* ----------------------------WHY CHOOSE US CSS ENDS---------------------------- */
 
 
 
-/* ------------------OUR DEPARTMENT CSS STARTS-------------------- */
+/* ------------------------------OUR DEPARTMENT CSS STARTS-------------------- */
 
 #OurDep {
   position: relative;
@@ -978,11 +812,13 @@ width: 70px;
   font-size: 38px;
   font-weight: 700;
 }
+
 #OurDep h2 span {
   color: #262626;
   font-size: 38px;
   font-weight: 700;
 }
+
 #box1 {
   width: 100%;
   display: flex;
@@ -990,7 +826,8 @@ width: 70px;
   justify-content: center;
   align-items: center;
 }
-.box1 img{
+
+.box1 img {
   width: 250px;
 }
 
@@ -998,10 +835,11 @@ width: 70px;
   color: #4a4bc0;
 }
 
-/* ------------------OUR DEPARTMENT CSS ENDS-------------------- */
+/* ----------------------------OUR DEPARTMENT CSS ENDS-------------------- */
 
-/* -------------------Technology css starts---------------------- */
-#technology .techmain{
+
+/* -------------------------Technology css starts--------------------------- */
+#technology .techmain {
   position: relative;
   display: flex;
   /* flex-direction: column; */
@@ -1026,10 +864,12 @@ width: 70px;
   border-radius: 15px;
   transition: all 400ms ease-in-out;
 }
-#techimg{
+
+#techimg {
   width: 48%;
   height: 100%;
 }
+
 .techcontainer img {
   width: 100%;
   height: 100%;
@@ -1041,17 +881,20 @@ width: 70px;
   margin-bottom: 0.4rem;
   padding-top: 10px;
 }
-.techtitle small{
+
+.techtitle small {
   font-size: 0.9rem;
   margin-top: 20px;
 }
-.othercont h4{
+
+.othercont h4 {
   color: #ffffff;
   font-size: 1.3rem;
   margin: 0.5rem 0rem;
   font-family: "Poppins", sans-serif;
 }
-.othercont{
+
+.othercont {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -1069,6 +912,7 @@ width: 70px;
   padding-bottom: 50px;
   align-content: center;
 }
+
 #technology h2 {
   display: block;
   height: 47px;
@@ -1080,7 +924,8 @@ width: 70px;
   margin: auto;
   text-align: center;
 }
-#technology .readmore{
+
+#technology .readmore {
   /* margin: 2.5rem 0rem; */
   padding-top: 15px;
 }
@@ -1093,25 +938,30 @@ width: 70px;
   /* background-color: #14b8eb; */
   border-radius: 12px;
 }
-#technology .readmore a:hover{
+
+#technology .readmore a:hover {
   background-color: #4a4bc0;
   border-radius: 12px;
 }
-#technology .readmore a:active{
+
+#technology .readmore a:active {
   background-color: #14b8eb;
 }
+
 .techcontainer:hover {
   margin-top: -0.5rem;
 }
 
-/* -------------------Technology css ends------------------------ */
+/* ---------------------------Technology css ends--------------------------- */
 
-/* ------------------Our Blogs starts-------------------------- */
+
+/* -----------------------------Our Blogs starts---------------------------- */
 #blogs {
   width: 100%;
   overflow: hidden;
   position: relative;
 }
+
 .OurBlogs {
   width: 100%;
   height: 80%;
@@ -1144,6 +994,7 @@ width: 70px;
   padding-bottom: 50px;
   align-content: center;
 }
+
 .blogbox {
   background: linear-gradient(135deg, #480ca8, #4cc9f0);
   display: flex;
@@ -1160,10 +1011,12 @@ width: 70px;
   transition: all 400ms ease-in-out;
 
 }
+
 .blogbox img {
   height: 200px;
   width: 100%;
 }
+
 #blogs .blogbox article {
   color: #ffffff;
   padding: 1.5rem;
@@ -1182,7 +1035,8 @@ width: 70px;
   text-decoration: underline;
   text-align: center;
 }
-.blogbox .readmore{
+
+.blogbox .readmore {
   margin-bottom: 1.5rem;
 }
 
@@ -1194,146 +1048,164 @@ width: 70px;
   /* background-color: #14b8eb; */
   border-radius: 12px;
 }
-.blogbox .readmore:hover{
+
+.blogbox .readmore:hover {
   background-color: #4a4bc0;
   border-radius: 12px;
 }
-.blogbox .readmore:active{
+
+.blogbox .readmore:active {
   background-color: #14b8eb;
 }
+
 .blogbox:hover {
   margin-top: -0.5rem;
 }
-/*----------------------- Our blogs ends------------------------- */
 
- 
+/*-------------------------------- Our blogs ends------------------------- */
 
-    /* ------------------------- CUSTOMER REVIEW CSS STARTS----------------------- */
 
-    #testimonials{
-      margin: 0px;
-      padding: 0px;
-      box-sizing: border-box;
-      font-family: "Poppins", sans-serif;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      width: 100%;
-    }
-    .testimonial-heading{
-      letter-spacing: 1px;
-      margin: 30px 0;
-      padding: 10px 20px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-    }
-    
-    .testimonial-heading h1{
-      color: #4a4bc0;
-      font-size: 38px;
-      font-weight: 700;
-      padding: 10px 20px;
-    }
-    
-    .testimonial-heading h1 span{
-      color: #262626;
-      font-size: 38px;
-      font-weight: 700;
-      padding: 10px 20px;
-    }
-    
-    .testimonial-box-container{
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-wrap: wrap;
-      width: 100%;
-      padding-bottom: 60px;
-    }
-    .testimonial-box{
-      width: 500px;
-      box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.1);
-      background-color: #ffffff;
-      padding: 40px;
-      margin: 35px;
-      cursor: pointer;
-      border-radius: 20px;
-    }
-    .profile-img{
-      width: 50px;
-      height: 50px;
-      border-radius: 50%;
-      overflow: hidden;
-    }
-    .profile-img img{
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      object-position: center;
-    }
-    .profile{
-      display: flex;
-      align-items: center;
-    }
-    .name-user{
-      display: flex;
-      flex-direction: column;
-      padding-left: 10px;
-    }
-    .name-user strong{
-      color: #3d3d3d;
-      font-size: 1.1rem;
-      letter-spacing: 0.5px;
-    }
-    .name-user span{
-      color: #979797;
-      font-size: 0.8rem;
-    }
-    .reviews{
-      color: #f9d71c;
-    }
-    .box-top{
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin-bottom: 20px;
-    }
-    
-    .comment{
-      font-size: 0.9rem;
-      color: #4b4b4b;
-    }
-    /* ------------------------- CUSTOMER REVIEW CSS ENDS----------------------- */
-    
+
+/* ------------------------- CUSTOMER REVIEW CSS STARTS----------------------- */
+
+#testimonials {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.testimonial-heading {
+  letter-spacing: 1px;
+  margin: 30px 0;
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.testimonial-heading h1 {
+  color: #4a4bc0;
+  font-size: 38px;
+  font-weight: 700;
+  padding: 10px 20px;
+}
+
+.testimonial-heading h1 span {
+  color: #262626;
+  font-size: 38px;
+  font-weight: 700;
+  padding: 10px 20px;
+}
+
+.testimonial-box-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  padding-bottom: 60px;
+}
+
+.testimonial-box {
+  width: 500px;
+  box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  padding: 40px;
+  margin: 35px;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+.profile-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.profile-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+}
+
+.name-user {
+  display: flex;
+  flex-direction: column;
+  padding-left: 10px;
+}
+
+.name-user strong {
+  color: #3d3d3d;
+  font-size: 1.1rem;
+  letter-spacing: 0.5px;
+}
+
+.name-user span {
+  color: #979797;
+  font-size: 0.8rem;
+}
+
+.reviews {
+  color: #f9d71c;
+}
+
+.box-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.comment {
+  font-size: 0.9rem;
+  color: #4b4b4b;
+}
+
+/* ------------------------- CUSTOMER REVIEW CSS ENDS----------------------- */
+
 
 
 /*----------------------- FOOTER CSS STARTS------------------------- */
 
-footer{
+footer {
   background-color: #060f1e;
   margin: auto;
   position: relative;
   z-index: 20;
 
- 
+
 }
-.footer-container{
+
+.footer-container {
   margin: auto;
   height: 300px;
   padding: 20px;
- 
+
 }
+
 .row {
-  width:100%;
+  width: 100%;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   flex-wrap: wrap;
   /* padding: 30px; */
 }
+
 .footer-col {
   width: 23%;
   height: 200px;
@@ -1342,19 +1214,22 @@ footer{
   justify-content: flex-start;
   /* align-items: center; */
 }
-.footer-col h3{
+
+.footer-col h3 {
   font-size: 25px;
   color: #fff;
   margin-bottom: 20px;
   font-weight: 500;
   /* text-decoration: underline; */
 }
+
 .footer-social {
   padding-left: 0;
-    margin-bottom: 0;
-    margin-top: 20px;
-    MARGIN-LEFT: 10PX;
+  margin-bottom: 0;
+  margin-top: 20px;
+  MARGIN-LEFT: 10PX;
 }
+
 .footer-social li {
   display: inline-block;
   margin-right: 10px;
@@ -1364,6 +1239,7 @@ footer{
 .footer-social li:last-child {
   margin-right: 0
 }
+
 .footer-social i {
   display: inline-block;
   height: 40px;
@@ -1396,24 +1272,25 @@ footer{
 
 .location li a {
   color: #fff;
-  text-decoration : none;
+  text-decoration: none;
 }
 
 .location li a:hover {
   color: #207ef7;
   /* letter-spacing: 1px; */
-  text-decoration : none;
+  text-decoration: none;
 }
 
 .location li:last-child {
   margin-bottom: 0
 }
-.footer-col .map{
-    /* flex: 1 1 1rem; */
-    height: 150px;
-    width: 255px;
-    /* width: auto; */
-    /* object-fit: cover; */
+
+.footer-col .map {
+  /* flex: 1 1 1rem; */
+  height: 150px;
+  width: 255px;
+  /* width: auto; */
+  /* object-fit: cover; */
 }
 
 
@@ -1431,13 +1308,13 @@ footer{
 
 .footer-quick-links li a {
   color: #fff;
-  text-decoration : none;
+  text-decoration: none;
 }
 
 .footer-quick-links li a:hover {
   color: #207ef7;
   letter-spacing: 1px;
-  text-decoration : none;
+  text-decoration: none;
 }
 
 .footer-quick-links li:last-child {
@@ -1454,7 +1331,7 @@ footer .copyright-area {
   text-align: center;
   color: white;
   border-top: 1px solid rgb(123, 118, 201);
-  
+
 }
 
 .copyright {
@@ -1700,7 +1577,8 @@ textarea.input {
 .contact-info .title {
   color: #1c5fd4;
 }
-.contact-info .text{
+
+.contact-info .text {
   color: #1c5fd4;
 }
 
@@ -1723,7 +1601,7 @@ textarea.input {
 
 .icon {
   width: 28px;
-filter: hue-rotate(45deg);
+  filter: hue-rotate(45deg);
   margin-right: 0.7rem;
 }
 
