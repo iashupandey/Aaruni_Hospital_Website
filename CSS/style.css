@@ -38,10 +38,9 @@ h5 {
   line-height: 1.2;
 }
 
-
 /* ---------------------------NAVIGATION SECTION CSS STARTS-------------------- */
 
-#navbar{
+#navbar {
   position: fixed;
   /* height: 110px; */
   width: 100%;
@@ -53,14 +52,14 @@ h5 {
   align-items: center;
   background: linear-gradient(135deg, #480ca8, #4cc9f0);
 }
-.doublecontr{
+.doublecontr {
   display: flex;
   width: 75%;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.navcnt1{
+.navcnt1 {
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -68,30 +67,30 @@ h5 {
   justify-content: flex-end;
   align-items: center;
 }
-.midnav{
+.midnav {
   display: flex;
   width: 65%;
   flex-direction: row;
-  justify-content:space-between;
+  justify-content: space-between;
   align-items: center;
 }
-.midnav li a{
+.midnav li a {
   margin: 0.2rem 0.5rem;
   color: white;
-  font-family: 'Albert Sans', sans-serif;
+  font-family: "Albert Sans", sans-serif;
   font-size: 1.3rem;
-  font-weight:500;
+  font-weight: 500;
   transition: all 200ms ease;
 }
-.midnav li a:hover{
+.midnav li a:hover {
   font-weight: 600;
   border-bottom: 2px solid white;
 }
-.midnav li a:active{
+.midnav li a:active {
   border-bottom: none;
   font-weight: 500;
 }
-.iconcntr{
+.iconcntr {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -99,23 +98,88 @@ h5 {
   width: 20%;
   margin: 0.5rem 0rem;
 }
-.iconcntr img{
+.iconcntr img {
   height: 36px;
   width: 40px;
   margin: 0rem 0.5rem;
   border-radius: 40px;
 }
-.imgcnt{
+.imgcnt {
   width: 20%;
 }
-.imgcnt img{
+.imgcnt img {
   height: 100%;
   width: 45%;
   border-radius: 20px;
 }
+button {
+  display: none;
+}
+/* --------------------------- Media Queries(Medium devices for Nav-------------------- */
+@media screen and (max-width: 1150px) {
+  /* .midnav {
+   position: fixed;
+   right:1%;
+   top: 5rem;
+   background: red;
+   flex-direction: column;
+   align-items: flex-start;
+   gap: 0;
+  }
+
+  .open__nav-btn {
+    display: inline-block;
+  } */
+}
+
+
+/* .button{
+  color: white;
+  font-size: 300px;
+  line-height: 80px;
+  display: none;
+}
+.mobile-navbar-btn{
+  display: none;
+  background: transparent;
+  cursor: pointer;
+}
+.mobile-nav-icon{
+  width: 4rem;
+  height: 4rem;
+  color: #212529;
+}
+
+.mobile-nav-icon[name="close-outline"]{
+  display: none;
+} */
+/* --------------------------- Media Queries(Medium devices for Nav-------------------- */
+/* 
+@media(max-width:64em){
+  .mobile-navbar-btn{
+    display: block;
+    z-index: 999;
+     border: 3px solid #212529;
+     color: #212529;
+  }
+.imgcnt{
+  width: 20%;
+}
+.navbar{
+  position: relative;
+}
+.doublecontr{
+  display: none;
+  width: 100%;
+  height: 25vh;
+  background: #1c5fd4;
+  position: absolute;
+}
+
+
+} */
 
 /* ---------------------------NAVIGATION SECTION CSS ENDS-------------------- */
-
 
 /* ---------------------------SERVICES SECTION CSS START-------------------- */
 
@@ -173,7 +237,6 @@ h5 {
 /*# sourceMappingURL=style.css.map */
 
 /* ---------------------------SERVICES SECTION CSS ENDS-------------------- */
-
 
 /* ------------------------------HEADER SLIDER CSS STARTS------------------------------ */
 img {
@@ -254,25 +317,24 @@ img {
   height: 50px;
   bottom: 15px;
   right: 370px;
-  background-color:  rgb(39, 65, 89);
+  background-color: rgb(39, 65, 89);
   border-radius: 25px;
   box-shadow: 2px 2px 3px #999;
   cursor: pointer;
   z-index: 10;
   overflow: hidden;
 }
-.float a{
-  color: #FFF;
+.float a {
+  color: #fff;
   font-weight: 700;
   display: flex;
   text-align: center;
   justify-content: space-between;
-  padding-right:65px;
+  padding-right: 65px;
   line-height: 49px;
   font-size: larger;
-  
 }
-.float img{
+.float img {
   height: 50px;
   width: 50px;
   padding: 0;
@@ -280,7 +342,6 @@ img {
   vertical-align: middle;
   border-radius: 50%;
 }
-
 
 .float2 {
   position: fixed;
@@ -290,23 +351,22 @@ img {
   left: 370px;
   background-color: rgb(39, 65, 89);
   border-radius: 25px;
-  box-shadow: 2px 2px 3px  #999;
+  box-shadow: 2px 2px 3px #999;
   cursor: pointer;
   z-index: 10;
   overflow: hidden;
 }
-.float2 a{
-  color: #FFF;
-  font-weight:700;
+.float2 a {
+  color: #fff;
+  font-weight: 700;
   display: flex;
   text-align: center;
   justify-content: space-between;
   padding-right: 7px;
   line-height: 49px;
   font-size: larger;
-  
 }
-.float2 img{
+.float2 img {
   height: 50px;
   width: 50px;
   padding: 0;
@@ -316,7 +376,6 @@ img {
 }
 
 /*--------------------------- Appointment & Call button css ends-------------------- */
-
 
 /* --------------------------------floating(+) button css start-------------------------------*/
 @-webkit-keyframes come-in {
@@ -454,19 +513,16 @@ img {
 }
 
 .floating-container .float-element:nth-child(2) {
-  background: #4CAF50;
+  background: #4caf50;
   box-shadow: 0 20px 20px -10px rgba(76, 175, 80, 0.5);
 }
 
 .floating-container .float-element:nth-child(3) {
-  background: #FF9800;
+  background: #ff9800;
   box-shadow: 0 20px 20px -10px rgba(255, 152, 0, 0.5);
 }
 
-
 /* --------------------------------floating(+) button css ends-------------------------------*/
-
-
 
 /* -------------------------------ABOUT US CSS STARTS------------------------- */
 
@@ -570,7 +626,6 @@ img {
   width: 100%;
 }
 
-
 .about .row .image {
   flex: 1 1 45rem;
 }
@@ -584,7 +639,6 @@ img {
 /* -----------------------------ABOUT US CSS ENDS---------------------- */
 
 /* -------------------------Managing director CSS Starts------------------- */
-
 
 .manage h2 {
   /* border-left: 7px solid #3b5c99; */
@@ -698,10 +752,7 @@ img {
 
 /* ---------------------------Managing director CSS ENDS----------------------- */
 
-
-
 /* ------------------------------WHY CHOOSE US CSS STARTS-------------------- */
-
 
 .choose h2 {
   /* border-left: 7px solid #3b5c99; */
@@ -811,8 +862,6 @@ img {
 
 /* ----------------------------WHY CHOOSE US CSS ENDS---------------------------- */
 
-
-
 /* ------------------------------OUR DEPARTMENT CSS STARTS-------------------- */
 
 #OurDep {
@@ -854,7 +903,6 @@ img {
 }
 
 /* ----------------------------OUR DEPARTMENT CSS ENDS-------------------- */
-
 
 /* -------------------------Technology css starts--------------------------- */
 #technology .techmain {
@@ -972,7 +1020,6 @@ img {
 
 /* ---------------------------Technology css ends--------------------------- */
 
-
 /* -----------------------------Our Blogs starts---------------------------- */
 #blogs {
   width: 100%;
@@ -1027,7 +1074,6 @@ img {
   overflow: hidden;
   border-radius: 15px;
   transition: all 400ms ease-in-out;
-
 }
 
 .blogbox img {
@@ -1081,8 +1127,6 @@ img {
 }
 
 /*-------------------------------- Our blogs ends------------------------- */
-
-
 
 /* ------------------------- CUSTOMER REVIEW CSS STARTS----------------------- */
 
@@ -1140,7 +1184,6 @@ img {
   cursor: pointer;
   border-radius: 20px;
   transition: all 200ms ease;
-
 }
 
 .profile-img {
@@ -1199,8 +1242,6 @@ img {
 }
 /* ------------------------- CUSTOMER REVIEW CSS ENDS----------------------- */
 
-
-
 /*----------------------- FOOTER CSS STARTS------------------------- */
 
 footer {
@@ -1208,15 +1249,12 @@ footer {
   margin: auto;
   position: relative;
   z-index: 20;
-
-
 }
 
 .footer-container {
   margin: auto;
   height: 300px;
   padding: 20px;
-
 }
 
 .row {
@@ -1249,17 +1287,17 @@ footer {
   padding-left: 0;
   margin-bottom: 0;
   margin-top: 20px;
-  MARGIN-LEFT: 10PX;
+  margin-left: 10px;
 }
 
 .footer-social li {
   display: inline-block;
   margin-right: 10px;
-  list-style-type: none
+  list-style-type: none;
 }
 
 .footer-social li:last-child {
-  margin-right: 0
+  margin-right: 0;
 }
 
 .footer-social i {
@@ -1272,24 +1310,24 @@ footer {
   text-align: center;
   border-radius: 30px;
   font-size: 16px;
-  -webkit-transition: .5s;
-  transition: .5s
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .footer-social i:hover {
-  background-color: #6c9dfb
+  background-color: #6c9dfb;
 }
 
 .location {
   padding-left: 0;
-  margin-bottom: 0
+  margin-bottom: 0;
 }
 
 .location li {
   list-style-type: none;
   margin-bottom: 10px;
   font-size: 12px;
-  font-weight: 700
+  font-weight: 700;
 }
 
 .location li a {
@@ -1304,7 +1342,7 @@ footer {
 }
 
 .location li:last-child {
-  margin-bottom: 0
+  margin-bottom: 0;
 }
 
 .footer-col .map {
@@ -1315,17 +1353,16 @@ footer {
   /* object-fit: cover; */
 }
 
-
 .footer-quick-links {
   padding-left: 0;
-  margin-bottom: 0
+  margin-bottom: 0;
 }
 
 .footer-quick-links li {
   list-style-type: none;
   margin-bottom: 10px;
   font-size: 15px;
-  font-weight: 400
+  font-weight: 400;
 }
 
 .footer-quick-links li a {
@@ -1340,7 +1377,7 @@ footer {
 }
 
 .footer-quick-links li:last-child {
-  margin-bottom: 0
+  margin-bottom: 0;
 }
 
 footer .copyright-area {
@@ -1353,7 +1390,6 @@ footer .copyright-area {
   text-align: center;
   color: white;
   border-top: 1px solid rgb(123, 118, 201);
-
 }
 
 .copyright {
@@ -1362,7 +1398,6 @@ footer .copyright-area {
   font-size: larger;
   font-weight: 500;
   justify-content: center;
-
 }
 
 footer .copyright a {
@@ -1385,7 +1420,6 @@ footer .copyright .logo-bottom {
   width: 30px;
   vertical-align: middle;
 }
-
 
 /*----------------------- FOOTER CSS ENDS------------------------- */
 
@@ -1629,7 +1663,6 @@ textarea.input {
   filter: hue-rotate(45deg);
   margin-right: 0.7rem;
 }
-
 
 .social-media {
   padding: 2rem 0 0 0;
