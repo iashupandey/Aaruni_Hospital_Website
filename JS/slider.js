@@ -18,4 +18,7 @@ const swiper = new Swiper('.swiper', {
         prevEl: '.swiper-button-prev',
     },
   });
+  function myFunction(x) {
+    x.classList.toggle("change");
+  }
    

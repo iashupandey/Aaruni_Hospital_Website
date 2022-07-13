@@ -122,8 +122,83 @@ h5 {
   width: 45%;
   border-radius: 20px;
 }
+/*----------Menubar Css starts--------------- */
 
+#cont {
+  display: none;
+  cursor: pointer;
+}
 
+.bar1,
+.bar2,
+.bar3 {
+  width: 25px;
+  height: 4px;
+  background-color: white;
+  margin: 4px 0;
+  transition: 0.4s;
+}
+
+.change .bar1 {
+  -webkit-transform: rotate(-45deg)translate(-9px, 0px);
+  transform: rotate(-45deg) translate(-9px, 0px);
+}
+
+.change .bar2 {
+  opacity: 0;
+}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-12px, -4px);
+  transform: rotate(45deg) translate(-12px, -4px);
+}
+.hamburger {
+  display: none;
+  position: absolute;
+  top: 65%;
+  right: 0px;
+  font-size: 1rem;
+  font-weight: bolder;
+}
+
+div.change+div.hamburger {
+  display: block;
+}
+#button{
+  position: absolute;
+  top: 10px;
+  right: 5px;
+}
+
+.button-box {
+  /* height: 520px; */
+  width: 100%;
+  background: linear-gradient(135deg, #480ca8, #4cc9f0);
+  display: flex;
+  flex-direction: row;
+  z-index: 100;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 5px;
+}
+
+.button-box ul li a {
+  display: flex;
+  flex-direction: row;
+  align-content: space-around;
+  justify-content: center;
+  align-items: center;
+  color: aliceblue;
+  padding: 8px;
+  font-size: 1rem;
+  font-weight: 500;
+}
+.button-box ul li a:hover{
+  text-decoration: 3px underline;
+  font-weight: 600;
+}
+/* ---------Menu Bar CSS ends------- */
 /* --------------------------- Media Queries(Medium devices for Nav-------------------- */
 @media screen and (max-width: 1150px) {
   /* .midnav {
@@ -573,7 +648,7 @@ img {
   justify-content: flex-start;
   align-items: center;
   width: 100%;
-  flex: 1 1 45rem;
+  /* flex: 1 1 45rem; */
   padding-left: 2rem;
   /* border: 2px solid red; */
   /* left: 0; */
@@ -638,9 +713,6 @@ img {
   width: 100%;
 }
 
-.about .row .image {
-  flex: 1 1 45rem;
-}
 
 .about .row .image img {
   width: 100%;
@@ -681,13 +753,11 @@ img {
 }
 
 .manage .dir .con {
-  height: 450px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
   width: 100%;
-  flex: 1 1 45rem;
   padding-right: 2rem;
   /* border: 2px solid red; */
   /* left: 0; */
@@ -750,10 +820,6 @@ img {
   color: #ffffff;
   text-decoration: none;
   width: 100%;
-}
-
-.manage .dir .image {
-  flex: 1 1 45rem;
 }
 
 .manage .dir .image img {
@@ -1986,6 +2052,15 @@ textarea.input {
     border-radius: 15px;
     transition: all 200ms ease;
   }
+  
+  .about .row .content h3 {
+    padding-top: 10px;
+    padding-right: 5px;
+    color: #000000;
+    font-size: 40px;
+    font-weight: 600;
+    padding-bottom: 12px;
+  }
 
   .footer-container {
     margin: auto;
@@ -2050,7 +2125,46 @@ textarea.input {
   #box1 img {
     width: 270px;
   }
+  .about .row .content h3 {
+    padding-top: 10px;
+    padding-right: 5px;
+    color: #000000;
+    font-size: 40px;
+    font-weight: 600;
+    padding-bottom: 12px;
+  }
+  /*  */
+  .choose .choose-row {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    padding: 20px;
+  }
 
+  .choose .choose-row .choose-content {
+    /* height: 450px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    flex: 1 1 45rem;
+    padding-left: 2rem;
+    /* border: 2px solid red; */
+  }
+
+  .choose .choose-row .choose-content h3 {
+    padding-top: 8px;
+    padding-right: 6px;
+    color: #000000;
+    font-size: 21px;
+    font-weight: 700;
+    padding-bottom: 8px;
+  }
+  .choose .choose-row .choose-content li {
+    padding-bottom: 12px;
+  }
+  /*  */
   .techcontainer {
     background: linear-gradient(135deg, #480ca8, #4cc9f0);
     display: flex;
@@ -2207,7 +2321,7 @@ textarea.input {
   }
 
   .about .row .content p {
-    padding-top: 5px;
+    padding-top: 30px;
     padding-right: 8px;
     color: #000000;
     font-size: 14px;
@@ -2237,14 +2351,13 @@ textarea.input {
     justify-content: flex-start;
     align-items: center;
     width: 100%;
-    flex: 1 1 45rem;
     padding-left: 2rem;
     /* border: 2px solid red; */
     /* left: 0; */
   }
 
   .manage .dir .con h3 {
-    padding-top: 15px;
+    padding-top: 50px;
     padding-right: 5px;
     color: #000000;
     font-size: 40px;
@@ -2347,7 +2460,7 @@ textarea.input {
   }
 
   .choose .choose-row .choose-content {
-    height: 450px;
+    /* height: 450px; */
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -2488,11 +2601,13 @@ textarea.input {
     height: 220px;
   }
 
+  /*  */
+  
   .about .row {
     display: flex;
     align-items: center;
     flex-wrap: nowrap;
-    padding: 10px;
+    padding: 20px;
   }
 
   .about .row .content {
@@ -2503,22 +2618,22 @@ textarea.input {
     align-items: center;
     width: 100%;
     flex: 1 1 45rem;
-    padding-left: 1rem;
+    padding-left: 2rem;
     /* border: 2px solid red; */
     /* left: 0; */
   }
 
   .about .row .content h3 {
-    padding-top: 0px;
-    padding-right: 0px;
+    padding-top: 15px;
+    padding-right: 5px;
     color: #000000;
-    font-size: 35px;
+    font-size: 40px;
     font-weight: 400;
     padding-bottom: 12px;
   }
 
   .about .row .content p {
-    padding-top: 5px;
+    padding-top: 30px;
     padding-right: 8px;
     color: #000000;
     font-size: 14px;
@@ -2532,13 +2647,13 @@ textarea.input {
     font-weight: 600;
     padding-bottom: 10px;
   }
-
+  /*  */
   /* -- */
   .manage .dir {
     display: flex;
     align-items: center;
     flex-wrap: nowrap;
-    padding: 10px;
+    padding: 20px;
   }
 
   .manage .dir .con {
@@ -2548,23 +2663,22 @@ textarea.input {
     justify-content: flex-start;
     align-items: center;
     width: 100%;
-    flex: 1 1 45rem;
-    padding-left: 1rem;
+    padding-left: 2rem;
     /* border: 2px solid red; */
     /* left: 0; */
   }
 
   .manage .dir .con h3 {
-    padding-top: 5px;
-    padding-right: 0px;
+    padding-top: 50px;
+    padding-right: 5px;
     color: #000000;
-    font-size: 35px;
+    font-size: 40px;
     font-weight: 400;
-    padding-bottom: 12px;
+    padding-bottom: 13px;
   }
 
   .manage .dir .con p {
-    padding-top: 20px;
+    padding-top: 40px;
     padding-right: 8px;
     color: #000000;
     font-size: 14px;
@@ -2789,9 +2903,32 @@ textarea.input {
 
 /*--------------Below 607px--------------- */
 @media only screen and (max-width:607px) {
+  #navbar {
+    position: fixed;
+    /* height: 110px; */
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    z-index: 100;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(135deg, #480ca8, #4cc9f0);
+  }
   .doublecontr {
     display: none;
   }
+  #cont {
+    display: inline-block;
+    cursor: pointer;
+}
+#header {
+  margin-top: 0px;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding-top: 30px;
+}
   /*  */
   #OurDep h2 {
     color: #4a4bc0;
@@ -2830,105 +2967,49 @@ textarea.input {
   .about .row {
     display: flex;
     align-items: center;
-    flex-wrap: nowrap;
+    flex-wrap:wrap;
     padding: 5px;
+    flex-direction: column;
+    align-items: center;
+    justify-content:flex-start;
   }
-
   .about .row .content {
-    /* height: 450px; */
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
     width: 100%;
-    flex: 1 1 45rem;
-    padding-left: 0.2rem;
-    /* border: 2px solid red; */
-    /* left: 0; */
+    padding-left: 2rem;
   }
-
-  .about .row .content h3 {
-    padding-top: 0px;
-    padding-right: 0px;
-    color: #000000;
-    font-size: 25px;
-    font-weight: 400;
-    padding-bottom: 5px;
+  .about .row .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    padding-left: 2rem;
   }
-
-  .about .row .content p {
-    padding-top: 5px;
-    padding-right: 0px;
-    color: #000000;
-    font-size: 13px;
-    font-weight: 600;
-  }
-
-  .about .row .content .p-inner {
-    padding-right: 0px;
-    color: #000000;
-    font-size: 13px;
-    font-weight: 600;
-    padding-bottom: 8px;
-  }
-
   /* -- */
-  .manage h2 {
-    color: #4a4bc0;
-    font-size: 30px;
-    font-weight: 700;
-  }
-  
-  .manage h2 span {
-    color: #262626;
-    font-size: 30px;
-    font-weight: 700;
+  .manage .dir .con {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 2rem;
   }
   .manage .dir {
-    display: flex;
-    align-items: center;
-    flex-wrap: nowrap;
-    padding: 5px;
-  }
-
-  .manage .dir .con {
-    /* height: 450px; */
+    height: 70%;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
     align-items: center;
-    width: 100%;
-    flex: 1 1 45rem;
-    padding-left: 0.2rem;
-    /* border: 2px solid red; */
-    /* left: 0; */
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0px;
   }
-
-  .manage .dir .con h3 {
-    padding-top: 0px;
-    padding-right: 0px;
-    color: #000000;
-    font-size: 25px;
-    font-weight: 400;
-    padding-bottom: 5px;
+  .manage .dir img {
+    display: none;
   }
-
-  .manage .dir .con p {
-    padding-top: 5px;
-    padding-right: 0px;
-    color: #000000;
-    font-size: 13px;
-    font-weight: 600;
-  }
-
-  .manage .dir .con .inner {
-    padding-right: 0px;
-    color: #000000;
-    font-size: 13px;
-    font-weight: 600;
-    padding-bottom: 8px;
-  }
-
   /* -- */
 
   /*  */
@@ -2951,7 +3032,7 @@ textarea.input {
     flex-wrap: wrap;
     align-items: center;
     height: 90%;
-    width: 95%;
+    width: 69%;
     /* border: 2px solid white; */
     margin: 1rem;
     overflow: hidden;
@@ -3103,12 +3184,12 @@ textarea.input {
     display: inline-block;
     height: 15px;
     width: 15px;
-    line-height: 10px;
+    line-height: 14px;
     background-color: #207ef7;
     color: #fff;
     text-align: center;
     border-radius: 30px;
-    font-size: 8px;
+    font-size: 7px;
     -webkit-transition: 0.5s;
     transition: 0.5s;
 }
@@ -3166,7 +3247,39 @@ textarea.input {
     font-size: 30px;
     font-weight: 700;
   }
-
+  #OurDep h2 {
+    color: #4a4bc0;
+    font-size: 30px;
+    font-weight: 700;
+  }
+  
+  #OurDep h2 span {
+    color: #262626;
+    font-size: 30px;
+    font-weight: 700;
+  }
+  #manage h2 {
+    color: #4a4bc0;
+    font-size: 30px;
+    font-weight: 700;
+  }
+  
+  #manage h2 span {
+    color: #262626;
+    font-size: 30px;
+    font-weight: 700;
+  }
+  .counterheading {
+    color: #4a4bc0;
+    font-size: 30px;
+    font-weight: 700;
+  }
+  
+  .counterheading span {
+    color: #262626;
+    font-size: 30px;
+    font-weight: 700;
+  }
   #services .container {
     display: flex;
     flex-wrap: wrap;
