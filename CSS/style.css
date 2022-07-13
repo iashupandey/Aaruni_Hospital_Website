@@ -1470,7 +1470,7 @@ textarea {
   justify-content: center;
   z-index: 12;
   padding-top: 180px;
-  padding-left: 90px;
+  /* padding-left: 90px; */
 }
 
 .form {
@@ -2907,7 +2907,7 @@ textarea.input {
 @media only screen and (max-width:607px) {
   #navbar {
     position: fixed;
-    /* height: 110px; */
+    height: 50px;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -2923,6 +2923,7 @@ textarea.input {
   #cont {
     display: inline-block;
     cursor: pointer;
+    padding-right: 5px;
 }
 #header {
   margin-top: 0px;
