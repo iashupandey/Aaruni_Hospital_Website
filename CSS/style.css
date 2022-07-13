@@ -1935,6 +1935,13 @@ textarea.input {
 @media only screen and (min-width:1088px) and (max-width:1140px) {
 
   /*-------------------------Technology container--------------*/
+  #header {
+    margin-top: 0px;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding-top: 0px;
+  }
   .techcontainer {
     background: linear-gradient(135deg, #480ca8, #4cc9f0);
     display: flex;
@@ -2043,7 +2050,13 @@ textarea.input {
   .iconcntr {
     display: none;
   }
-
+  #header {
+    margin-top: 0px;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding-top: 0px;
+  }
   .midnav {
     display: flex;
     width: 85%;
@@ -2208,7 +2221,13 @@ textarea.input {
   .iconcntr {
     display: none;
   }
-
+  #header {
+    margin-top: 0px;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding-top: 0px;
+  }
   .midnav {
     display: flex;
     width: 90%;
@@ -2517,7 +2536,13 @@ textarea.input {
   .iconcntr {
     display: none;
   }
-
+  #header {
+    margin-top: 0px;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding-top: 0px;
+  }
   .midnav {
     display: flex;
     width: 100%;
