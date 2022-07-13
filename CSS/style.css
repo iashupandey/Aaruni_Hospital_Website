@@ -338,7 +338,7 @@ img {
   width: 260px;
   height: 50px;
   bottom: 15px;
-  right: 370px;
+  right: 340px;
   background: linear-gradient(135deg, #480ca8, #784575);
   border-radius: 25px;
   box-shadow: 2px 2px 3px #999;
@@ -372,7 +372,7 @@ img {
   width: 260px;
   height: 50px;
   bottom: 15px;
-  left: 370px;
+  left: 340px;
   background: linear-gradient(135deg, #480ca8, #784575);
   border-radius: 25px;
   box-shadow: 2px 2px 3px #999;
@@ -1894,6 +1894,13 @@ textarea.input {
     transition: all 200ms ease;
   }
 
+  .float{
+    right: 250px;
+  }
+  .float2{
+    left: 250px;
+  }
+
   .footer-container {
     margin: auto;
     height: 300px;
@@ -2000,6 +2007,14 @@ textarea.input {
     font-weight: 600;
     padding-bottom: 12px;
   }
+  
+  .float{
+    right: 230px;
+  }
+  .float2{
+    left: 230px;
+  }
+
 
   .footer-container {
     margin: auto;
@@ -2129,6 +2144,13 @@ textarea.input {
     cursor: pointer;
     border-radius: 15px;
     transition: all 200ms ease;
+  }
+
+  .float{
+    right: 180px;
+  }
+  .float2{
+    left: 170px;
   }
 
   .footer-container {
@@ -2429,6 +2451,13 @@ textarea.input {
     cursor: pointer;
     border-radius: 15px;
     transition: all 200ms ease;
+  }
+
+  .float{
+    right: 150px;
+  }
+  .float2{
+    left: 30px;
   }
 
   .footer-container {
@@ -2743,6 +2772,15 @@ textarea.input {
     transition: all 200ms ease;
   }
 
+  .float{
+    right: 80px;
+  }
+  .float2{
+    left: 5px;
+  }
+  .floating-container .floating-button{
+  margin: -10px 50px;
+}
   .footer-container {
     margin: auto;
     /* height: 300px; */
