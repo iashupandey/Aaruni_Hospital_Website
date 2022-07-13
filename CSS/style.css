@@ -521,6 +521,7 @@ img {
   bottom: 0;
   right: 0;
   margin: 20px 25px;
+  z-index: 200;
 }
 
 .floating-container:hover {
@@ -1328,7 +1329,7 @@ footer {
   background-color: #060f1e;
   margin: auto;
   position: relative;
-  z-index: 20;
+  z-index: 300;
 }
 
 .footer-container {
