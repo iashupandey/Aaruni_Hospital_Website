@@ -521,7 +521,6 @@ img {
   bottom: 0;
   right: 0;
   margin: 20px 25px;
-  z-index: 200;
 }
 
 .floating-container:hover {
@@ -1329,7 +1328,7 @@ footer {
   background-color: #060f1e;
   margin: auto;
   position: relative;
-  z-index: 300;
+  z-index: 20;
 }
 
 .footer-container {
@@ -2990,6 +2989,14 @@ textarea.input {
     width: 100%;
     padding-left: 2rem;
   }
+  .about .row .content h3 {
+    padding-top: 8px;
+    padding-right: 0px;
+    color: #000000;
+    font-size: 26px;
+    font-weight: 600;
+    padding-bottom: 0px;
+}
   /* -- */
   .manage .dir .con {
     display: flex;
